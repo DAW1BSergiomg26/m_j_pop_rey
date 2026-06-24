@@ -1,0 +1,82 @@
+﻿[
+  {
+    "titulo": "Motown 25: Yesterday, Today, Forever",
+    "anio": 1983,
+    "tipo": "Presentación televisiva histórica",
+    "estado": "Registro televisivo / edición comercial según región",
+    "valor": "Máximo",
+    "descripcion": "Presentación donde Michael Jackson interpretó Billie Jean y popularizó masivamente el moonwalk ante la televisión estadounidense.",
+    "accesoLegal": "Buscar ediciones oficiales de Motown 25 en DVD/Blu-ray o clips autorizados por titulares de derechos.",
+    "riesgoCopyright": "Muy alto: material televisivo protegido; no alojar copias completas."
+  },
+  {
+    "titulo": "Bad World Tour - Wembley 1988",
+    "anio": 1988,
+    "tipo": "Concierto oficial",
+    "estado": "Publicado oficialmente",
+    "valor": "Máximo",
+    "descripcion": "Uno de los documentos en vivo más importantes de la era Bad. Muestra a Michael Jackson en estado físico, vocal y escénico monumental.",
+    "accesoLegal": "Comprar o consultar Live at Wembley July 16, 1988 en tiendas legales, edición física o plataformas autorizadas.",
+    "riesgoCopyright": "Alto: edición comercial protegida; enlazar o comprar legalmente."
+  },
+  {
+    "titulo": "Dangerous Tour - Live in Bucharest",
+    "anio": 1992,
+    "tipo": "Concierto oficial",
+    "estado": "Publicado oficialmente",
+    "valor": "Muy alto",
+    "descripcion": "Registro oficial de la gira Dangerous, con una puesta en escena masiva, coreografías de precisión y repertorio de alto impacto.",
+    "accesoLegal": "Buscar Live in Bucharest: The Dangerous Tour en DVD, Blu-ray, plataformas de compra o alquiler legal.",
+    "riesgoCopyright": "Alto: no subir ni reutilizar fragmentos sin licencia."
+  },
+  {
+    "titulo": "Super Bowl XXVII Halftime Show",
+    "anio": 1993,
+    "tipo": "Presentación televisiva histórica",
+    "estado": "Archivo televisivo / clips oficiales según disponibilidad",
+    "valor": "Máximo",
+    "descripcion": "Actuación decisiva para transformar el show de medio tiempo en espectáculo pop global. Incluyó Jam, Billie Jean, Black or White y Heal the World.",
+    "accesoLegal": "Consultar archivos oficiales de NFL, clips autorizados y fuentes televisivas legales.",
+    "riesgoCopyright": "Muy alto: derechos televisivos y musicales; no alojar copia."
+  },
+  {
+    "titulo": "HIStory World Tour",
+    "anio": "1996-1997",
+    "tipo": "Gira mundial",
+    "estado": "Registros televisivos y ediciones regionales",
+    "valor": "Alto",
+    "descripcion": "Gira gigantesca de la etapa HIStory, con estética militar-pop, pantallas masivas, coreografías monumentales y repertorio de grandes éxitos.",
+    "accesoLegal": "Revisar ediciones oficiales/regionales, archivos televisivos y plataformas legales disponibles por país.",
+    "riesgoCopyright": "Alto: muchos registros circulan sin licencia; evitar enlaces dudosos."
+  },
+  {
+    "titulo": "Michael Jackson's This Is It",
+    "anio": 2009,
+    "tipo": "Película documental musical / ensayos",
+    "estado": "Publicado oficialmente",
+    "valor": "Muy alto",
+    "descripcion": "Documento de los ensayos finales para la gira This Is It. Permite ver método de trabajo, dirección musical, precisión escénica y exigencia artística.",
+    "accesoLegal": "Comprar o alquilar Michael Jackson's This Is It en plataformas legales o edición física.",
+    "riesgoCopyright": "Alto: película comercial protegida."
+  },
+  {
+    "titulo": "Grammy Awards y MTV Awards",
+    "anio": "1980s-2000s",
+    "tipo": "Presentaciones y apariciones televisivas",
+    "estado": "Archivo televisivo / clips oficiales",
+    "valor": "Alto",
+    "descripcion": "Apariciones clave en premios, actuaciones, homenajes y momentos de reconocimiento institucional.",
+    "accesoLegal": "Consultar canales oficiales de Grammy, MTV, archivos autorizados y hemerotecas audiovisuales.",
+    "riesgoCopyright": "Alto: clips televisivos protegidos."
+  },
+  {
+    "titulo": "Presentaciones benéficas y humanitarias",
+    "anio": "1980s-2000s",
+    "tipo": "Actuaciones benéficas",
+    "estado": "Registros dispersos",
+    "valor": "Medio-alto",
+    "descripcion": "Eventos vinculados a causas humanitarias, campañas benéficas y mensajes de unidad social.",
+    "accesoLegal": "Usar solo archivos oficiales, clips autorizados, notas de prensa o documentación verificable.",
+    "riesgoCopyright": "Medio-alto: verificar derechos de cada registro."
+  }
+]

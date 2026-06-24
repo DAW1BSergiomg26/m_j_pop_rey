@@ -125,3 +125,29 @@ async function loadVideos() {
 }
 
 loadVideos();
+
+async function loadConcerts() {
+  const grid = document.querySelector("#concerts-grid");
+  if (!grid) return;
+
+  try {
+    const response = await fetch("data/conciertos.json");
+    const concerts = await response.json();
+
+    grid.innerHTML = concerts.map((concert) => `
+      <article class="data-card concert-card">
+        <span class="tag">${concert.tipo} · ${concert.anio}</span>
+        <h3>${concert.titulo}</h3>
+        <p><strong>Estado:</strong> ${concert.estado}</p>
+        <p>${concert.descripcion}</p>
+        <p><strong>Valor documental:</strong> ${concert.valor}</p>
+        <p><strong>Acceso legal:</strong> ${concert.accesoLegal}</p>
+        <p><strong>Derechos:</strong> ${concert.riesgoCopyright}</p>
+      </article>
+    `).join("");
+  } catch (error) {
+    grid.innerHTML = "<p>No se pudieron cargar los conciertos. Revisa data/conciertos.json.</p>";
+  }
+}
+
+loadConcerts();
