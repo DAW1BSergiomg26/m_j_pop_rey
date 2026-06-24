@@ -762,3 +762,257 @@ main,
   position: relative;
   z-index: 2;
 }
+
+/* =========================================================
+   Responsive Fix + Golden Sweep
+   Menú móvil limpio + línea dorada con barrido cinematográfico
+   ========================================================= */
+
+/* Línea superior con barrido dorado constante */
+.hero::before,
+.page-hero::before {
+  overflow: hidden;
+  background:
+    linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(138, 106, 24, 0.34) 12%,
+      #8a6a18 24%,
+      #d4af37 38%,
+      #f7e7a3 50%,
+      #d4af37 62%,
+      rgba(109, 7, 21, 0.34) 82%,
+      transparent 100%
+    ) !important;
+  background-size: 220% 100% !important;
+  animation: goldenSweep 4.8s linear infinite;
+  box-shadow:
+    0 0 10px rgba(212, 175, 55, 0.30),
+    0 0 24px rgba(212, 175, 55, 0.16),
+    0 0 42px rgba(109, 7, 21, 0.08) !important;
+}
+
+/* Pequeña línea interior más fina tipo brillo Billie Jean */
+.hero-content::before,
+.page-hero h1::before {
+  content: "";
+  display: block;
+  width: min(420px, 72vw);
+  height: 2px;
+  margin-bottom: 28px;
+  border-radius: 999px;
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(212, 175, 55, 0.42),
+      #f7e7a3,
+      rgba(109, 7, 21, 0.30),
+      transparent
+    );
+  background-size: 220% 100%;
+  animation: goldenSweep 5.6s linear infinite;
+  box-shadow:
+    0 0 12px rgba(212, 175, 55, 0.22),
+    0 0 24px rgba(212, 175, 55, 0.08);
+}
+
+@keyframes goldenSweep {
+  0% {
+    background-position: 220% 50%;
+  }
+
+  100% {
+    background-position: -220% 50%;
+  }
+}
+
+/* Respeta usuarios que prefieren menos movimiento */
+@media (prefers-reduced-motion: reduce) {
+  .hero::before,
+  .page-hero::before,
+  .hero-content::before,
+  .page-hero h1::before {
+    animation: none !important;
+  }
+}
+
+/* =========================
+   Reparación móvil
+   ========================= */
+
+@media (max-width: 900px) {
+  .site-header {
+    min-height: 72px;
+    align-items: center;
+    overflow: visible;
+  }
+
+  .menu-toggle {
+    display: inline-grid !important;
+    place-items: center;
+    width: 42px;
+    height: 42px;
+    position: relative;
+    z-index: 50;
+    color: #f7ead0;
+    background:
+      linear-gradient(145deg, rgba(14, 12, 8, 0.98), rgba(3, 3, 3, 0.98));
+    border: 2px solid rgba(212, 175, 55, 0.72);
+    box-shadow:
+      0 0 12px rgba(212, 175, 55, 0.20),
+      inset 0 1px 0 rgba(247, 234, 208, 0.10);
+  }
+
+  .main-nav {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 18px;
+    right: 18px;
+    z-index: 45;
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px;
+    border: 1.5px solid rgba(212, 175, 55, 0.58);
+    border-radius: 18px;
+    background:
+      radial-gradient(circle at 90% 10%, rgba(212, 175, 55, 0.08), transparent 22%),
+      linear-gradient(145deg, rgba(10, 8, 5, 0.99), rgba(0, 0, 0, 0.99));
+    box-shadow:
+      0 22px 70px rgba(0, 0, 0, 0.78),
+      0 0 18px rgba(212, 175, 55, 0.12);
+  }
+
+  .main-nav.is-open {
+    display: flex !important;
+  }
+
+  .main-nav a {
+    display: block;
+    padding: 12px 14px;
+    border-radius: 12px;
+    color: #f7ead0 !important;
+    background: rgba(212, 175, 55, 0.035);
+  }
+
+  .main-nav a:hover {
+    background: rgba(212, 175, 55, 0.10);
+  }
+
+  .main-nav a::after {
+    bottom: 4px;
+    left: 14px;
+  }
+
+  .hero {
+    min-height: auto;
+    grid-template-columns: 1fr !important;
+    gap: 28px;
+    padding-top: 86px;
+    padding-bottom: 54px;
+    overflow: hidden;
+  }
+
+  .page-hero {
+    min-height: auto;
+    padding-top: 86px;
+    padding-bottom: 54px;
+  }
+
+  .hero::before,
+  .page-hero::before {
+    left: 18px;
+    right: 18px;
+    top: 22px;
+  }
+
+  .hero::after {
+    width: 92%;
+    height: 80px;
+    opacity: 0.38;
+  }
+
+  .hero-content,
+  .page-hero {
+    max-width: 100%;
+  }
+
+  .hero h1,
+  .page-hero h1 {
+    max-width: 100%;
+    font-size: clamp(2.25rem, 13vw, 4.6rem);
+    line-height: 0.98;
+    letter-spacing: -0.055em;
+  }
+
+  .hero-text,
+  .page-hero p:not(.eyebrow) {
+    max-width: 100%;
+    font-size: 1rem;
+  }
+
+  .hero-actions {
+    gap: 10px;
+  }
+
+  .btn {
+    width: 100%;
+    min-height: 46px;
+    text-align: center;
+  }
+
+  .stage-card {
+    min-height: 260px;
+    padding: 24px;
+  }
+
+  .fedora {
+    top: 44px;
+    font-size: 3.2rem;
+  }
+
+  .glove {
+    font-size: 4.8rem;
+  }
+
+  .section {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+}
+
+@media (max-width: 560px) {
+  .brand {
+    max-width: 220px;
+    font-size: 0.95rem;
+  }
+
+  .site-header {
+    padding: 14px 18px;
+  }
+
+  .hero,
+  .page-hero {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .hero h1,
+  .page-hero h1 {
+    font-size: clamp(2.2rem, 12.4vw, 3.7rem);
+  }
+
+  .eyebrow {
+    font-size: 0.68rem;
+    letter-spacing: 0.18em;
+  }
+
+  .card,
+  .legal-card,
+  .data-card,
+  .notice,
+  .timeline article {
+    padding: 20px;
+  }
+}

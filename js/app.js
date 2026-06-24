@@ -265,3 +265,19 @@ function initThrillerCanvas() {
 }
 
 initThrillerCanvas();
+
+function improveMobileMenu() {
+  const mobileButton = document.querySelector(".menu-toggle");
+  const mobileNav = document.querySelector(".main-nav");
+
+  if (!mobileButton || !mobileNav) return;
+
+  mobileNav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      mobileNav.classList.remove("is-open");
+      mobileButton.setAttribute("aria-expanded", "false");
+    });
+  });
+}
+
+improveMobileMenu();
