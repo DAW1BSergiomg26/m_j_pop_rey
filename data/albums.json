@@ -1,0 +1,50 @@
+﻿[
+  {
+    "titulo": "Off the Wall",
+    "anio": 1979,
+    "tipo": "Álbum de estudio",
+    "valor": "Muy alto",
+    "descripcion": "La consagración del Michael adulto: soul, disco, funk, pop elegante y producción de Quincy Jones.",
+    "accesoLegal": "https://www.michaeljackson.com/music/off-wall/"
+  },
+  {
+    "titulo": "Thriller",
+    "anio": 1982,
+    "tipo": "Álbum de estudio",
+    "valor": "Máximo",
+    "descripcion": "Obra total del pop moderno: música, videoclip, marketing, danza e industria global.",
+    "accesoLegal": "https://www.michaeljackson.com/music/thriller/"
+  },
+  {
+    "titulo": "Bad",
+    "anio": 1987,
+    "tipo": "Álbum de estudio",
+    "valor": "Muy alto",
+    "descripcion": "Una era de control artístico, gira mundial, imagen afilada y short films memorables.",
+    "accesoLegal": "https://www.michaeljackson.com/music/bad/"
+  },
+  {
+    "titulo": "Dangerous",
+    "anio": 1991,
+    "tipo": "Álbum de estudio",
+    "valor": "Muy alto",
+    "descripcion": "Cambio sonoro hacia el new jack swing, una estética más urbana y una escala global inmensa.",
+    "accesoLegal": "https://www.michaeljackson.com/music/dangerous/"
+  },
+  {
+    "titulo": "HIStory",
+    "anio": 1995,
+    "tipo": "Álbum doble",
+    "valor": "Alto",
+    "descripcion": "Mitad retrospectiva, mitad manifiesto artístico frente al juicio público y mediático.",
+    "accesoLegal": "https://www.michaeljackson.com/music/history-past-present-and-future-book-i/"
+  },
+  {
+    "titulo": "Invincible",
+    "anio": 2001,
+    "tipo": "Álbum de estudio",
+    "valor": "Alto",
+    "descripcion": "Último álbum de estudio publicado en vida; producción moderna, R&B y pop de gran escala.",
+    "accesoLegal": "https://www.michaeljackson.com/music/invincible/"
+  }
+]
