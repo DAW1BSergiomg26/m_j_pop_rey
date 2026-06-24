@@ -1,0 +1,173 @@
+﻿/* =========================================================
+   Quality Polish V1 - Archivo Moonwalk
+   Pulido global de calidad visual, accesibilidad y responsive.
+   ========================================================= */
+
+/* Accesibilidad: foco visible elegante */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--gold-light);
+  outline-offset: 4px;
+  border-radius: 10px;
+  box-shadow:
+    0 0 0 4px rgba(212, 175, 55, 0.16),
+    0 0 18px rgba(212, 175, 55, 0.28);
+}
+
+/* Mejora de lectura general */
+.section-heading p,
+.card p,
+.legal-card p,
+.notice p,
+.timeline p,
+.data-card p {
+  text-wrap: pretty;
+}
+
+/* Tarjetas más vivas, sin exagerar */
+.card,
+.legal-card,
+.data-card,
+.notice,
+.timeline article {
+  transition:
+    transform 0.22s ease,
+    border-color 0.22s ease,
+    box-shadow 0.22s ease,
+    background 0.22s ease;
+}
+
+.card:hover,
+.legal-card:hover,
+.data-card:hover,
+.timeline article:hover {
+  transform: translateY(-4px);
+  border-color: rgba(212, 175, 55, 0.62);
+  box-shadow:
+    0 22px 70px rgba(0, 0, 0, 0.58),
+    0 0 24px rgba(212, 175, 55, 0.09);
+}
+
+/* Botones más consistentes */
+.btn,
+.legal-card a,
+.card.link-card {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.legal-card a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  color: var(--gold-light);
+  font-weight: 800;
+}
+
+.legal-card a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 12px rgba(212, 175, 55, 0.35);
+}
+
+/* Header más estable al hacer scroll */
+.site-header {
+  backdrop-filter: blur(14px);
+}
+
+/* Logo más nítido */
+.brand-logo {
+  object-fit: contain;
+  image-rendering: auto;
+}
+
+/* Footer más premium */
+.site-footer {
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid rgba(212, 175, 55, 0.35);
+  background:
+    radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.08), transparent 34%),
+    linear-gradient(180deg, rgba(5, 4, 2, 0.98), #000000);
+}
+
+.site-footer::before {
+  content: "";
+  position: absolute;
+  left: var(--container-x);
+  right: var(--container-x);
+  top: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  opacity: 0.75;
+  box-shadow: 0 0 18px rgba(212, 175, 55, 0.22);
+}
+
+/* Enlaces internos suavizados */
+html {
+  scroll-padding-top: 96px;
+}
+
+/* Evita desbordes visuales en textos largos */
+h1,
+h2,
+h3,
+p,
+a {
+  overflow-wrap: break-word;
+}
+
+/* Móvil: tarjetas y secciones más respirables */
+@media (max-width: 900px) {
+  .section {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .section-heading {
+    margin-bottom: 28px;
+  }
+
+  .grid {
+    gap: 18px;
+  }
+
+  .card:hover,
+  .legal-card:hover,
+  .data-card:hover,
+  .timeline article:hover {
+    transform: none;
+  }
+
+  .site-footer {
+    padding-left: 18px;
+    padding-right: 18px;
+    text-align: center;
+  }
+}
+
+/* Móvil pequeño: botones y textos con mejor tacto */
+@media (max-width: 560px) {
+  .main-nav a {
+    min-height: 48px;
+  }
+
+  .btn {
+    min-height: 50px;
+  }
+
+  .eyebrow {
+    line-height: 1.45;
+  }
+}
+
+/* Respeto a usuarios con animaciones reducidas */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.001ms !important;
+  }
+}
