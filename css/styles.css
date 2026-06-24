@@ -740,3 +740,25 @@ h2 {
     font-size: clamp(2.25rem, 15vw, 4.4rem);
   }
 }
+
+/* =========================
+   16. Efecto cinematográfico Thriller
+   ========================= */
+
+#thriller-canvas {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0.42;
+  mix-blend-mode: screen;
+}
+
+.site-header,
+main,
+.site-footer {
+  position: relative;
+  z-index: 2;
+}

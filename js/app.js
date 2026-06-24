@@ -177,3 +177,91 @@ async function loadDocs() {
 }
 
 loadDocs();
+
+function initThrillerCanvas() {
+  const canvas = document.querySelector("#thriller-canvas");
+  if (!canvas) return;
+
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduceMotion) return;
+
+  const ctx = canvas.getContext("2d");
+  let width = window.innerWidth;
+  let height = window.innerHeight;
+  let particles = [];
+
+  function resizeCanvas() {
+    width = window.innerWidth;
+    height = window.innerHeight;
+    canvas.width = width * window.devicePixelRatio;
+    canvas.height = height * window.devicePixelRatio;
+    canvas.style.width = `${width}px`;
+    canvas.style.height = `${height}px`;
+    ctx.setTransform(window.devicePixelRatio, 0, 0, window.devicePixelRatio, 0, 0);
+  }
+
+  function createParticles() {
+    const amount = Math.min(70, Math.floor(width / 22));
+
+    particles = Array.from({ length: amount }, () => ({
+      x: Math.random() * width,
+      y: Math.random() * height,
+      radius: Math.random() * 1.8 + 0.4,
+      speed: Math.random() * 0.35 + 0.08,
+      drift: (Math.random() - 0.5) * 0.18,
+      opacity: Math.random() * 0.22 + 0.05
+    }));
+  }
+
+  function drawParticle(particle) {
+    const gradient = ctx.createRadialGradient(
+      particle.x,
+      particle.y,
+      0,
+      particle.x,
+      particle.y,
+      particle.radius * 8
+    );
+
+    gradient.addColorStop(0, `rgba(109, 7, 21, ${particle.opacity})`);
+    gradient.addColorStop(0.45, `rgba(80, 0, 10, ${particle.opacity * 0.45})`);
+    gradient.addColorStop(1, "rgba(0, 0, 0, 0)");
+
+    ctx.beginPath();
+    ctx.fillStyle = gradient;
+    ctx.arc(particle.x, particle.y, particle.radius * 8, 0, Math.PI * 2);
+    ctx.fill();
+  }
+
+  function animate() {
+    ctx.clearRect(0, 0, width, height);
+
+    particles.forEach((particle) => {
+      drawParticle(particle);
+
+      particle.y += particle.speed;
+      particle.x += particle.drift;
+
+      if (particle.y > height + 40) {
+        particle.y = -40;
+        particle.x = Math.random() * width;
+      }
+
+      if (particle.x < -40) particle.x = width + 40;
+      if (particle.x > width + 40) particle.x = -40;
+    });
+
+    requestAnimationFrame(animate);
+  }
+
+  resizeCanvas();
+  createParticles();
+  animate();
+
+  window.addEventListener("resize", () => {
+    resizeCanvas();
+    createParticles();
+  });
+}
+
+initThrillerCanvas();
