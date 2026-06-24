@@ -1,0 +1,98 @@
+﻿[
+  {
+    "periodo": "1958",
+    "titulo": "Nacimiento en Gary, Indiana",
+    "tipo": "Origen biográfico",
+    "descripcion": "Michael Joseph Jackson nació el 29 de agosto de 1958 en Gary, Indiana, dentro de una familia que pronto quedaría marcada por la música, la disciplina escénica y el trabajo colectivo.",
+    "valor": "Alto",
+    "estado": "Confirmado"
+  },
+  {
+    "periodo": "1964-1975",
+    "titulo": "The Jackson 5",
+    "tipo": "Infancia artística / grupo familiar",
+    "descripcion": "Michael se convirtió en la voz principal de The Jackson 5, grupo que alcanzó éxito masivo con Motown y mostró desde temprano su carisma vocal, sentido rítmico y presencia escénica.",
+    "valor": "Muy alto",
+    "estado": "Confirmado"
+  },
+  {
+    "periodo": "1979",
+    "titulo": "Off the Wall",
+    "tipo": "Consagración solista adulta",
+    "descripcion": "Con producción de Quincy Jones, Off the Wall consolidó al Michael adulto: soul, disco, funk y pop sofisticado. Fue el primer gran salto hacia una identidad solista propia.",
+    "valor": "Muy alto",
+    "estado": "Confirmado"
+  },
+  {
+    "periodo": "1982-1984",
+    "titulo": "Thriller y la conquista global",
+    "tipo": "Revolución musical y audiovisual",
+    "descripcion": "Thriller transformó la industria del pop: álbum, videoclip, danza, televisión, moda y marketing funcionaron como una maquinaria cultural sin precedentes.",
+    "valor": "Máximo",
+    "estado": "Confirmado"
+  },
+  {
+    "periodo": "1983",
+    "titulo": "Motown 25 y el moonwalk",
+    "tipo": "Momento escénico histórico",
+    "descripcion": "La interpretación televisiva de Billie Jean en Motown 25 ayudó a convertir el moonwalk en una firma corporal reconocible en todo el mundo.",
+    "valor": "Máximo",
+    "estado": "Confirmado"
+  },
+  {
+    "periodo": "1987-1989",
+    "titulo": "Bad y la era del control artístico",
+    "tipo": "Álbum / gira / estética",
+    "descripcion": "Bad presentó una imagen más afilada, urbana y desafiante. La gira mundial demostró su capacidad para dominar estadios con precisión coreográfica, teatralidad y escala internacional.",
+    "valor": "Muy alto",
+    "estado": "Confirmado"
+  },
+  {
+    "periodo": "1991-1993",
+    "titulo": "Dangerous y el sonido de una nueva década",
+    "tipo": "Evolución sonora",
+    "descripcion": "Dangerous incorporó new jack swing, R&B moderno, pop industrial y una estética más intensa. La etapa amplió su lenguaje visual y su mensaje social.",
+    "valor": "Muy alto",
+    "estado": "Confirmado"
+  },
+  {
+    "periodo": "1993",
+    "titulo": "Super Bowl XXVII",
+    "tipo": "Presentación televisiva histórica",
+    "descripcion": "Su show de medio tiempo ayudó a redefinir el espectáculo del Super Bowl como escenario global para superestrellas musicales.",
+    "valor": "Máximo",
+    "estado": "Confirmado"
+  },
+  {
+    "periodo": "1995-1997",
+    "titulo": "HIStory",
+    "tipo": "Retrospectiva y manifiesto artístico",
+    "descripcion": "HIStory combinó grandes éxitos con nuevas canciones cargadas de tensión mediática, defensa personal, crítica social y construcción de memoria pública.",
+    "valor": "Alto",
+    "estado": "Confirmado"
+  },
+  {
+    "periodo": "2001",
+    "titulo": "Invincible",
+    "tipo": "Último álbum de estudio publicado en vida",
+    "descripcion": "Invincible presentó una producción contemporánea con R&B, pop y baladas de gran escala. Es una etapa discutida, pero clave para entender su relación final con la industria discográfica.",
+    "valor": "Alto",
+    "estado": "Confirmado"
+  },
+  {
+    "periodo": "2009",
+    "titulo": "This Is It y fallecimiento",
+    "tipo": "Última etapa pública",
+    "descripcion": "Mientras preparaba la serie de conciertos This Is It, Michael Jackson falleció el 25 de junio de 2009. Los ensayos publicados después permiten ver su método de trabajo, exigencia musical y dirección escénica.",
+    "valor": "Muy alto",
+    "estado": "Confirmado"
+  },
+  {
+    "periodo": "Legado",
+    "titulo": "Memoria global del Rey del Pop",
+    "tipo": "Influencia cultural",
+    "descripcion": "Su influencia continúa en la danza, el videoclip, la moda, el pop global, el espectáculo de estadio, la cultura fan, los archivos digitales y la idea moderna de celebridad musical.",
+    "valor": "Máximo",
+    "estado": "Análisis cultural basado en hechos documentados"
+  }
+]
