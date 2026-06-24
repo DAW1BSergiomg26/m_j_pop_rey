@@ -1,0 +1,168 @@
+/* =========================================================
+   Museo Visual - Archivo Moonwalk
+   Galería simbólica legal con estética Royal Moonwalk Noir.
+   ========================================================= */
+
+.museo-hero {
+  min-height: 62vh;
+}
+
+.museum-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.museum-card {
+  position: relative;
+  min-height: 320px;
+  padding: 28px;
+  overflow: hidden;
+  border: 1px solid rgba(212, 175, 55, 0.42);
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at 50% 22%, rgba(247, 231, 163, 0.12), transparent 24%),
+    radial-gradient(circle at 88% 80%, rgba(109, 7, 21, 0.13), transparent 30%),
+    linear-gradient(145deg, rgba(14, 11, 5, 0.95), rgba(0, 0, 0, 0.96));
+  box-shadow:
+    inset 0 1px 0 rgba(247, 231, 163, 0.10),
+    0 24px 90px rgba(0, 0, 0, 0.54);
+  transition:
+    transform 0.24s ease,
+    border-color 0.24s ease,
+    box-shadow 0.24s ease;
+}
+
+.museum-card::before {
+  content: "";
+  position: absolute;
+  inset: 16px;
+  border: 1px solid rgba(212, 175, 55, 0.10);
+  border-radius: 22px;
+  pointer-events: none;
+}
+
+.museum-card::after {
+  content: "";
+  position: absolute;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), #fff2ad, var(--thriller-red), transparent);
+  opacity: 0.72;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.18);
+}
+
+.museum-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(247, 231, 163, 0.72);
+  box-shadow:
+    inset 0 1px 0 rgba(247, 231, 163, 0.14),
+    0 28px 100px rgba(0, 0, 0, 0.66),
+    0 0 30px rgba(212, 175, 55, 0.10);
+}
+
+.museum-symbol {
+  width: 86px;
+  height: 86px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 24px;
+  color: #fff0bb;
+  font-size: 3rem;
+  border: 1px solid rgba(212, 175, 55, 0.36);
+  border-radius: 24px;
+  background:
+    radial-gradient(circle, rgba(247, 231, 163, 0.18), transparent 68%),
+    rgba(212, 175, 55, 0.045);
+  filter:
+    drop-shadow(0 0 10px rgba(247, 231, 163, 0.24))
+    drop-shadow(0 0 22px rgba(212, 175, 55, 0.12));
+}
+
+.museum-kicker {
+  display: inline-flex;
+  margin-bottom: 10px;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.72rem;
+  font-weight: 900;
+}
+
+.museum-card h3 {
+  margin-bottom: 12px;
+  color: var(--text-strong);
+  font-size: clamp(1.45rem, 2.3vw, 2rem);
+  line-height: 1;
+}
+
+.museum-card p {
+  color: var(--muted);
+}
+
+.museum-timeline {
+  display: grid;
+  gap: 16px;
+}
+
+.museum-timeline article {
+  display: grid;
+  grid-template-columns: 68px 1fr;
+  gap: 18px;
+  align-items: start;
+  padding: 22px;
+  border: 1px solid rgba(212, 175, 55, 0.34);
+  border-radius: 22px;
+  background:
+    linear-gradient(135deg, rgba(212, 175, 55, 0.055), rgba(0, 0, 0, 0.82));
+}
+
+.museum-timeline span {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  color: #0c0700;
+  font-weight: 900;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #fff2ad, var(--gold), var(--gold-deep));
+}
+
+.museum-timeline h3 {
+  margin-bottom: 6px;
+  color: var(--text-strong);
+}
+
+.museum-timeline p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+@media (max-width: 980px) {
+  .museum-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .museum-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .museum-card {
+    min-height: auto;
+    padding: 24px;
+  }
+
+  .museum-symbol {
+    width: 72px;
+    height: 72px;
+    font-size: 2.45rem;
+  }
+
+  .museum-timeline article {
+    grid-template-columns: 1fr;
+  }
+}
