@@ -1,17 +1,47 @@
-/* Archivo Moonwalk - Fase 1 */
+﻿/* =========================================================
+   Archivo Moonwalk
+   Tema visual: Royal Moonwalk Noir
+   Negro premium · Oro metálico 24K · Rojo Thriller sutil
+   ========================================================= */
+
+/* =========================
+   1. Variables globales
+   ========================= */
+
 :root {
-  --bg: #050509;
-  --bg-soft: #10101c;
-  --card: rgba(255, 255, 255, 0.07);
-  --card-border: rgba(255, 255, 255, 0.15);
-  --text: #f7f2e8;
-  --muted: #c9c1b3;
-  --gold: #ffd36a;
-  --blue: #56c7ff;
-  --purple: #9a64ff;
-  --red: #e83f5b;
-  --shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+  --bg: #010101;
+  --bg-soft: #040404;
+  --bg-deep: #000000;
+
+  --gold: #d4af37;
+  --gold-light: #f7e7a3;
+  --gold-deep: #8a6a18;
+  --gold-dark: #6f4f09;
+
+  --text: #f7ead0;
+  --text-strong: #fff4d6;
+  --muted: #cdbf9f;
+
+  --thriller-red: #6d0715;
+  --thriller-red-dark: #350007;
+  --thriller-red-glow: rgba(109, 7, 21, 0.22);
+
+  --card: rgba(10, 10, 10, 0.94);
+  --card-border: rgba(212, 175, 55, 0.42);
+
+  --blue-shadow: #06101b;
+
+  --shadow-soft: 0 22px 82px rgba(0, 0, 0, 0.68);
+  --shadow-strong: 0 30px 100px rgba(0, 0, 0, 0.74);
+
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --container-x: clamp(18px, 5vw, 70px);
 }
+
+/* =========================
+   2. Reset y base
+   ========================= */
 
 * {
   box-sizing: border-box;
@@ -19,6 +49,7 @@
 
 html {
   scroll-behavior: smooth;
+  background: var(--bg);
 }
 
 body {
@@ -26,9 +57,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: var(--text);
   background:
-    radial-gradient(circle at top left, rgba(86, 199, 255, 0.25), transparent 30%),
-    radial-gradient(circle at 80% 20%, rgba(232, 63, 91, 0.18), transparent 28%),
-    linear-gradient(135deg, #050509 0%, #0b0b17 55%, #12070d 100%);
+    radial-gradient(circle at 12% 15%, rgba(212, 175, 55, 0.045), transparent 22%),
+    radial-gradient(circle at 90% 12%, rgba(212, 175, 55, 0.035), transparent 24%),
+    linear-gradient(135deg, #010101 0%, #040404 48%, #080604 78%, #000000 100%);
   line-height: 1.6;
 }
 
@@ -37,52 +68,110 @@ a {
   text-decoration: none;
 }
 
+p,
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
+strong {
+  color: var(--text-strong);
+}
+
+/* =========================
+   3. Header y navegación
+   ========================= */
+
 .site-header {
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 20;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 18px clamp(18px, 5vw, 70px);
-  background: rgba(5, 5, 9, 0.76);
-  backdrop-filter: blur(18px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 18px var(--container-x);
+  background: #020202;
+  border-bottom: 2px solid rgba(212, 175, 55, 0.44);
+  box-shadow:
+    0 10px 34px rgba(0, 0, 0, 0.78),
+    0 0 14px rgba(212, 175, 55, 0.08);
 }
 
 .brand {
   display: flex;
   align-items: center;
   gap: 10px;
+  color: var(--text);
   font-weight: 800;
   letter-spacing: 0.04em;
+  text-shadow:
+    0 0 8px rgba(212, 175, 55, 0.14),
+    0 0 16px rgba(212, 175, 55, 0.06);
+}
+
+.brand::after {
+  content: "";
+  display: inline-block;
+  width: 38px;
+  height: 2px;
+  margin-left: 10px;
+  background: linear-gradient(90deg, var(--gold), transparent);
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.28);
 }
 
 .brand-mark {
   color: var(--gold);
-  filter: drop-shadow(0 0 10px var(--gold));
+  filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.48));
 }
 
 .main-nav {
   display: flex;
   gap: 22px;
-  font-size: 0.95rem;
   color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.main-nav a {
+  position: relative;
+  color: #e8d9b6;
+}
+
+.main-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gold), var(--gold-light), var(--thriller-red));
+  box-shadow:
+    0 0 8px rgba(212, 175, 55, 0.24),
+    0 0 10px rgba(109, 7, 21, 0.18);
+  transition: width 0.22s ease;
 }
 
 .main-nav a:hover {
   color: var(--gold);
 }
 
+.main-nav a:hover::after {
+  width: 100%;
+}
+
 .menu-toggle {
   display: none;
-  background: transparent;
-  color: var(--text);
-  border: 1px solid var(--card-border);
-  border-radius: 10px;
   padding: 8px 10px;
+  color: var(--text);
   font-size: 1.2rem;
+  background: transparent;
+  border: 1px solid rgba(212, 175, 55, 0.44);
+  border-radius: 10px;
 }
+
+/* =========================
+   4. Hero principal
+   ========================= */
 
 .hero {
   min-height: 88vh;
@@ -91,8 +180,45 @@ a {
   grid-template-columns: minmax(0, 1.3fr) minmax(280px, 0.7fr);
   align-items: center;
   gap: 36px;
-  padding: 80px clamp(18px, 5vw, 70px);
+  padding: 90px var(--container-x);
   overflow: hidden;
+  background:
+    radial-gradient(circle at 10% 25%, rgba(212, 175, 55, 0.07), transparent 24%),
+    radial-gradient(circle at 82% 22%, rgba(212, 175, 55, 0.045), transparent 24%),
+    radial-gradient(circle at 92% 78%, rgba(109, 7, 21, 0.075), transparent 22%),
+    linear-gradient(135deg, #010101 0%, #040403 52%, #0b0704 100%);
+  border-bottom: 2px solid rgba(212, 175, 55, 0.46);
+  box-shadow:
+    inset 0 -1px 0 rgba(247, 234, 208, 0.12),
+    0 0 22px rgba(212, 175, 55, 0.045);
+}
+
+.hero::before,
+.page-hero::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: var(--container-x);
+  right: var(--container-x);
+  top: 26px;
+  height: 3px;
+  border-radius: 999px;
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(138, 106, 24, 0.28),
+      var(--gold-deep),
+      var(--gold),
+      #f0d98a,
+      var(--gold),
+      rgba(109, 7, 21, 0.24),
+      transparent
+    );
+  box-shadow:
+    0 0 10px rgba(212, 175, 55, 0.28),
+    0 0 22px rgba(212, 175, 55, 0.10);
+  pointer-events: none;
 }
 
 .hero::after {
@@ -104,8 +230,9 @@ a {
   height: 110px;
   transform: translateX(-50%);
   background:
-    repeating-linear-gradient(90deg, rgba(255,255,255,0.12) 0 2px, transparent 2px 90px),
-    radial-gradient(ellipse, rgba(86,199,255,0.22), transparent 65%);
+    linear-gradient(90deg, rgba(212,175,55,0.025) 1px, transparent 1px),
+    radial-gradient(ellipse, rgba(212,175,55,0.06), transparent 65%);
+  background-size: 90px 90px, auto;
   opacity: 0.75;
   pointer-events: none;
 }
@@ -120,35 +247,42 @@ a {
   margin: 0 0 12px;
   color: var(--gold);
   text-transform: uppercase;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.22em;
   font-size: 0.78rem;
   font-weight: 800;
-}
-
-h1,
-h2,
-h3,
-p {
-  margin-top: 0;
+  text-shadow:
+    0 0 7px rgba(212, 175, 55, 0.36),
+    0 0 16px rgba(212, 175, 55, 0.12);
 }
 
 h1 {
   margin-bottom: 22px;
+  color: var(--text);
   font-size: clamp(2.6rem, 8vw, 6.6rem);
   line-height: 0.95;
   letter-spacing: -0.06em;
+  text-shadow:
+    0 4px 0 rgba(0, 0, 0, 0.78),
+    0 0 10px rgba(212, 175, 55, 0.14),
+    0 0 22px rgba(212, 175, 55, 0.055);
 }
 
 h2 {
+  color: var(--text);
   font-size: clamp(2rem, 4vw, 3.6rem);
   line-height: 1;
   letter-spacing: -0.04em;
+  text-shadow:
+    0 4px 0 rgba(0, 0, 0, 0.78),
+    0 0 10px rgba(212, 175, 55, 0.14),
+    0 0 22px rgba(212, 175, 55, 0.055);
 }
 
-.hero-text {
-  max-width: 710px;
-  font-size: clamp(1.05rem, 2vw, 1.35rem);
+.hero-text,
+.page-hero p:not(.eyebrow) {
+  max-width: 760px;
   color: var(--muted);
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
 }
 
 .hero-actions {
@@ -157,6 +291,33 @@ h2 {
   gap: 14px;
   margin-top: 28px;
 }
+
+/* =========================
+   5. Páginas internas
+   ========================= */
+
+.page-hero {
+  position: relative;
+  padding: 110px var(--container-x) 90px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 10% 25%, rgba(212, 175, 55, 0.07), transparent 24%),
+    radial-gradient(circle at 82% 22%, rgba(212, 175, 55, 0.045), transparent 24%),
+    radial-gradient(circle at 92% 78%, rgba(109, 7, 21, 0.075), transparent 22%),
+    linear-gradient(135deg, #010101 0%, #040403 52%, #0b0704 100%);
+  border-bottom: 2px solid rgba(212, 175, 55, 0.46);
+  box-shadow:
+    inset 0 -1px 0 rgba(247, 234, 208, 0.12),
+    0 0 22px rgba(212, 175, 55, 0.045);
+}
+
+.page-hero h1 {
+  max-width: 900px;
+}
+
+/* =========================
+   6. Botones
+   ========================= */
 
 .btn {
   display: inline-flex;
@@ -174,54 +335,29 @@ h2 {
 }
 
 .btn.primary {
-  color: #160f04;
-  background: linear-gradient(135deg, var(--gold), #fff1b0);
-  box-shadow: 0 12px 36px rgba(255, 211, 106, 0.22);
+  color: #100900;
+  background: linear-gradient(135deg, #f7e7a3 0%, var(--gold) 48%, var(--gold-deep) 100%);
+  box-shadow:
+    0 14px 42px rgba(212, 175, 55, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.42);
 }
 
 .btn.ghost {
-  border: 1px solid var(--card-border);
-  background: rgba(255, 255, 255, 0.06);
-}
-
-.stage-card {
-  position: relative;
-  z-index: 1;
-  min-height: 360px;
-  display: grid;
-  place-items: center;
-  padding: 34px;
-  border: 1px solid var(--card-border);
-  border-radius: 32px;
-  background:
-    linear-gradient(145deg, rgba(255,255,255,0.11), rgba(255,255,255,0.03)),
-    radial-gradient(circle at 50% 30%, rgba(255,211,106,0.22), transparent 45%);
-  box-shadow: var(--shadow);
-  text-align: center;
-}
-
-.stage-card p {
-  font-size: 1.35rem;
-  font-weight: 800;
-}
-
-.fedora {
-  position: absolute;
-  top: 70px;
-  font-size: 5rem;
   color: var(--text);
-  transform: rotate(-9deg);
-  text-shadow: 0 0 25px rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(212, 175, 55, 0.48);
+  background: rgba(212, 175, 55, 0.045);
 }
 
-.glove {
-  font-size: 7rem;
-  color: var(--gold);
-  animation: pulse 2.2s infinite alternate;
-}
+/* =========================
+   7. Tarjetas y grids
+   ========================= */
 
 .section {
-  padding: 82px clamp(18px, 5vw, 70px);
+  padding: 82px var(--container-x);
+  background:
+    linear-gradient(90deg, rgba(212, 175, 55, 0.018) 1px, transparent 1px),
+    transparent;
+  background-size: 140px 140px;
 }
 
 .section-heading {
@@ -249,52 +385,105 @@ h2 {
 .card,
 .legal-card,
 .timeline article,
+.notice,
+.data-card {
+  border: 1.5px solid rgba(212, 175, 55, 0.42);
+  border-radius: var(--radius-lg);
+  background:
+    radial-gradient(circle at 94% 12%, rgba(212, 175, 55, 0.065), transparent 20%),
+    radial-gradient(circle at 8% 100%, rgba(109, 7, 21, 0.045), transparent 24%),
+    linear-gradient(145deg, rgba(14, 12, 8, 0.98), rgba(3, 3, 3, 0.98));
+  box-shadow:
+    var(--shadow-soft),
+    0 0 10px rgba(212, 175, 55, 0.055),
+    inset 0 1px 0 rgba(247, 234, 208, 0.08);
+}
+
+.card,
+.legal-card,
+.data-card,
 .notice {
-  border: 1px solid var(--card-border);
-  border-radius: 24px;
   padding: 24px;
-  background: var(--card);
-  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.18);
+}
+
+.card:hover,
+.legal-card:hover,
+.timeline article:hover,
+.data-card:hover {
+  border-color: rgba(212, 175, 55, 0.68);
+  box-shadow:
+    var(--shadow-strong),
+    0 0 18px rgba(212, 175, 55, 0.16),
+    0 0 36px rgba(212, 175, 55, 0.055);
 }
 
 .card h3,
 .legal-card h3,
-.timeline h3 {
-  color: var(--gold);
+.timeline h3,
+.data-card h3 {
+  color: var(--text);
 }
 
 .card p,
 .legal-card p,
 .timeline p,
+.data-card p,
 .notice p {
   color: var(--muted);
 }
 
-.legal-card {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.legal-card a {
-  color: var(--blue);
+.data-card .tag {
+  display: inline-flex;
+  margin-bottom: 12px;
+  padding: 5px 10px;
+  border: 1px solid rgba(247, 231, 163, 0.58);
+  border-radius: 999px;
+  color: #120b01;
+  background:
+    linear-gradient(135deg, #f7e7a3 0%, var(--gold) 42%, #a67c18 72%, #6f4f09 100%);
+  box-shadow:
+    0 0 8px rgba(212, 175, 55, 0.20),
+    0 6px 18px rgba(0, 0, 0, 0.36),
+    inset 0 1px 0 rgba(255, 255, 255, 0.42);
+  font-size: 0.78rem;
   font-weight: 800;
 }
 
-.legal-card small {
+.data-card a,
+.legal-card a {
   color: var(--gold);
+  font-weight: 800;
+  text-shadow:
+    0 0 8px rgba(212, 175, 55, 0.24),
+    0 0 14px rgba(212, 175, 55, 0.08);
 }
 
-.highlight {
+/* =========================
+   8. Avisos legales
+   ========================= */
+
+.notice {
+  border: 1.5px solid rgba(212, 175, 55, 0.54);
   background:
-    linear-gradient(145deg, rgba(255,211,106,0.12), rgba(255,255,255,0.04)),
-    var(--card);
+    radial-gradient(circle at 92% 18%, rgba(212, 175, 55, 0.075), transparent 22%),
+    linear-gradient(135deg, rgba(12, 10, 6, 0.98), rgba(3, 3, 3, 0.98));
+  box-shadow:
+    0 0 16px rgba(212, 175, 55, 0.08),
+    inset 0 0 20px rgba(212, 175, 55, 0.025);
 }
+
+/* =========================
+   9. Timeline
+   ========================= */
 
 .timeline {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 18px;
+}
+
+.timeline article {
+  padding: 24px;
 }
 
 .timeline span {
@@ -303,33 +492,195 @@ h2 {
   width: 44px;
   height: 44px;
   margin-bottom: 16px;
+  border: 1px solid rgba(247, 231, 163, 0.58);
   border-radius: 50%;
-  color: #130b02;
-  background: var(--gold);
+  color: #120b01;
+  background:
+    linear-gradient(135deg, #f7e7a3 0%, var(--gold) 42%, #a67c18 72%, #6f4f09 100%);
+  box-shadow:
+    0 0 8px rgba(212, 175, 55, 0.20),
+    0 6px 18px rgba(0, 0, 0, 0.36),
+    inset 0 1px 0 rgba(255, 255, 255, 0.42);
   font-weight: 900;
 }
 
-.sources .notice {
-  max-width: 980px;
+/* =========================
+   10. Tarjeta escénica home
+   ========================= */
+
+.stage-card {
+  position: relative;
+  z-index: 1;
+  min-height: 360px;
+  display: grid;
+  place-items: center;
+  padding: 34px;
+  border: 1.5px solid rgba(212, 175, 55, 0.42);
+  border-radius: var(--radius-xl);
+  background:
+    radial-gradient(circle at 50% 26%, rgba(212, 175, 55, 0.12), transparent 38%),
+    radial-gradient(circle at 80% 70%, rgba(109, 7, 21, 0.10), transparent 44%),
+    linear-gradient(145deg, rgba(14,12,8,0.98), rgba(3,3,3,0.98));
+  box-shadow: var(--shadow-soft);
+  text-align: center;
 }
 
-.site-footer {
-  padding: 32px clamp(18px, 5vw, 70px);
-  color: var(--muted);
-  border-top: 1px solid rgba(255,255,255,0.08);
-  background: rgba(0,0,0,0.28);
+.stage-card p {
+  color: var(--text);
+  font-size: 1.35rem;
+  font-weight: 800;
 }
+
+.fedora {
+  position: absolute;
+  top: 70px;
+  color: var(--text);
+  font-size: 5rem;
+  transform: rotate(-9deg);
+  text-shadow: 0 0 25px rgba(212, 175, 55, 0.22);
+}
+
+.glove {
+  color: var(--gold);
+  font-size: 7rem;
+  animation: pulse 2.2s infinite alternate;
+}
+
+/* =========================
+   11. Cards especiales
+   ========================= */
+
+.video-card,
+.concert-card,
+.doc-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.video-card::before,
+.concert-card::before,
+.doc-card::before {
+  position: absolute;
+  right: 22px;
+  top: 18px;
+  color: rgba(212, 175, 55, 0.24);
+  font-size: 2.6rem;
+  font-weight: 900;
+  text-shadow:
+    0 0 8px rgba(212, 175, 55, 0.20),
+    0 0 16px rgba(212, 175, 55, 0.07);
+}
+
+.video-card::before {
+  content: "▶";
+}
+
+.concert-card::before {
+  content: "★";
+}
+
+.doc-card::before {
+  content: "◎";
+}
+
+.video-card:hover,
+.concert-card:hover,
+.doc-card:hover {
+  transform: translateY(-3px);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+/* =========================
+   12. Acentos Thriller preparados
+   ========================= */
+
+.thriller-glow {
+  color: var(--text);
+  text-shadow:
+    0 0 10px rgba(212, 175, 55, 0.14),
+    0 0 20px var(--thriller-red-glow);
+}
+
+.thriller-blood-accent {
+  position: relative;
+}
+
+.thriller-blood-accent::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gold), var(--thriller-red), var(--thriller-red-dark));
+  box-shadow:
+    0 0 8px rgba(212, 175, 55, 0.20),
+    0 0 14px rgba(109, 7, 21, 0.24);
+}
+
+.thriller-drip {
+  position: relative;
+}
+
+.thriller-drip::before {
+  content: "";
+  position: absolute;
+  right: 12%;
+  bottom: -14px;
+  width: 4px;
+  height: 14px;
+  border-radius: 999px;
+  background: linear-gradient(var(--thriller-red), var(--thriller-red-dark));
+  opacity: 0.65;
+  box-shadow: 0 0 8px rgba(109, 7, 21, 0.24);
+}
+
+/* =========================
+   13. Footer y scrollbar
+   ========================= */
+
+.site-footer {
+  padding: 32px var(--container-x);
+  color: var(--muted);
+  border-top: 1px solid rgba(212, 175, 55, 0.42);
+  background: #020202;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020202;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 3px solid #020202;
+  border-radius: 999px;
+  background:
+    linear-gradient(#f7e7a3, var(--gold), var(--gold-deep), var(--thriller-red), var(--thriller-red-dark));
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.28);
+}
+
+/* =========================
+   14. Animaciones
+   ========================= */
 
 @keyframes pulse {
   from {
     transform: scale(1);
-    filter: drop-shadow(0 0 12px var(--gold));
+    filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.28));
   }
+
   to {
     transform: scale(1.06);
-    filter: drop-shadow(0 0 34px var(--gold));
+    filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.34));
   }
 }
+
+/* =========================
+   15. Responsive
+   ========================= */
 
 @media (max-width: 900px) {
   .hero {
@@ -354,1055 +705,38 @@ h2 {
     display: none;
     flex-direction: column;
     padding: 18px;
-    border: 1px solid var(--card-border);
+    border: 1px solid rgba(212, 175, 55, 0.44);
     border-radius: 18px;
-    background: rgba(5, 5, 9, 0.95);
+    background: rgba(3, 3, 3, 0.98);
   }
 
   .main-nav.is-open {
     display: flex;
   }
-}
 
-/* Fase 2 - páginas internas */
-.page-hero {
-  padding: 90px clamp(18px, 5vw, 70px) 45px;
-  background:
-    radial-gradient(circle at top right, rgba(255, 211, 106, 0.16), transparent 34%),
-    linear-gradient(135deg, rgba(255,255,255,0.04), transparent);
-}
-
-.page-hero h1 {
-  max-width: 900px;
-}
-
-.page-hero p:not(.eyebrow) {
-  max-width: 760px;
-  color: var(--muted);
-  font-size: 1.18rem;
-}
-
-.data-card {
-  border: 1px solid var(--card-border);
-  border-radius: 24px;
-  padding: 24px;
-  background:
-    linear-gradient(145deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03)),
-    var(--card);
-  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.18);
-}
-
-.data-card .tag {
-  display: inline-flex;
-  margin-bottom: 12px;
-  padding: 5px 10px;
-  border-radius: 999px;
-  background: rgba(255, 211, 106, 0.14);
-  color: var(--gold);
-  font-size: 0.78rem;
-  font-weight: 800;
-}
-
-.data-card h3 {
-  margin-bottom: 8px;
-  color: var(--text);
-}
-
-.data-card p {
-  color: var(--muted);
-}
-
-.data-card a {
-  color: var(--blue);
-  font-weight: 800;
-}
-
-.video-card {
-  position: relative;
-  overflow: hidden;
-}
-
-.video-card::before {
-  content: "▶";
-  position: absolute;
-  right: 22px;
-  top: 18px;
-  color: rgba(255, 211, 106, 0.28);
-  font-size: 2.4rem;
-  font-weight: 900;
-}
-
-.video-card:hover {
-  transform: translateY(-3px);
-  transition: transform 0.2s ease, border-color 0.2s ease;
-  border-color: rgba(255, 211, 106, 0.42);
-}
-
-.concert-card {
-  position: relative;
-  overflow: hidden;
-}
-
-.concert-card::before {
-  content: "★";
-  position: absolute;
-  right: 22px;
-  top: 18px;
-  color: rgba(86, 199, 255, 0.24);
-  font-size: 2.6rem;
-  font-weight: 900;
-}
-
-.concert-card:hover {
-  transform: translateY(-3px);
-  transition: transform 0.2s ease, border-color 0.2s ease;
-  border-color: rgba(86, 199, 255, 0.42);
-}
-
-.doc-card {
-  position: relative;
-  overflow: hidden;
-}
-
-.doc-card::before {
-  content: "◎";
-  position: absolute;
-  right: 22px;
-  top: 18px;
-  color: rgba(154, 100, 255, 0.28);
-  font-size: 2.6rem;
-  font-weight: 900;
-}
-
-.doc-card:hover {
-  transform: translateY(-3px);
-  transition: transform 0.2s ease, border-color 0.2s ease;
-  border-color: rgba(154, 100, 255, 0.42);
-}
-
-/* =========================================================
-   Royal Moonwalk Noir - Rediseño visual global
-   Inspiración: negro escenario, azul medianoche, oro real
-   y rojo Thriller como acento dramático.
-   ========================================================= */
-
-:root {
-  --bg: #030407;
-  --bg-soft: #090d14;
-  --card: rgba(255, 255, 255, 0.06);
-  --card-border: rgba(246, 200, 95, 0.24);
-  --text: #fff7e8;
-  --muted: #d5c8aa;
-  --gold: #f6c85f;
-  --gold-deep: #b8892f;
-  --blue: #61c8ff;
-  --purple: #6c4ab6;
-  --red: #b5122a;
-  --thriller-red: #b5122a;
-  --shadow: 0 28px 90px rgba(0, 0, 0, 0.58);
-}
-
-body {
-  background:
-    radial-gradient(circle at 12% 10%, rgba(6, 50, 82, 0.78), transparent 28%),
-    radial-gradient(circle at 80% 18%, rgba(181, 18, 42, 0.28), transparent 30%),
-    radial-gradient(circle at 52% 86%, rgba(246, 200, 95, 0.08), transparent 42%),
-    linear-gradient(135deg, #030407 0%, #06111f 44%, #12050b 100%);
-  color: var(--text);
-}
-
-/* Cabecera premium */
-.site-header {
-  background:
-    linear-gradient(90deg, rgba(3,4,7,0.96), rgba(7,12,20,0.92)),
-    rgba(3, 4, 7, 0.92);
-  border-bottom: 1px solid rgba(246, 200, 95, 0.18);
-  box-shadow: 0 12px 38px rgba(0, 0, 0, 0.38);
-}
-
-.brand {
-  color: var(--cream, #fff7e8);
-  text-shadow: 0 0 18px rgba(246, 200, 95, 0.15);
-}
-
-.brand-mark {
-  color: var(--gold);
-  filter: drop-shadow(0 0 14px rgba(246, 200, 95, 0.9));
-}
-
-.main-nav a {
-  position: relative;
-  color: #d8cdb8;
-}
-
-.main-nav a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -8px;
-  width: 0;
-  height: 2px;
-  background: linear-gradient(90deg, var(--gold), var(--thriller-red));
-  transition: width 0.22s ease;
-}
-
-.main-nav a:hover {
-  color: var(--gold);
-}
-
-.main-nav a:hover::after {
-  width: 100%;
-}
-
-/* Hero principal e internos */
-.hero,
-.page-hero {
-  background:
-    radial-gradient(circle at 20% 20%, rgba(8, 50, 82, 0.9), transparent 34%),
-    radial-gradient(circle at 85% 38%, rgba(181, 18, 42, 0.22), transparent 34%),
-    linear-gradient(135deg, rgba(255, 255, 255, 0.02), transparent);
-}
-
-h1,
-h2 {
-  color: #fff7e8;
-  text-shadow:
-    0 2px 0 rgba(0, 0, 0, 0.32),
-    0 0 32px rgba(246, 200, 95, 0.08);
-}
-
-.eyebrow {
-  color: var(--gold);
-  text-shadow: 0 0 16px rgba(246, 200, 95, 0.38);
-}
-
-/* Botones lujo dorado */
-.btn.primary {
-  color: #130d03;
-  background:
-    linear-gradient(135deg, #fff0a8 0%, #f6c85f 42%, #b8892f 100%);
-  box-shadow:
-    0 14px 42px rgba(246, 200, 95, 0.24),
-    inset 0 1px 0 rgba(255, 255, 255, 0.55);
-}
-
-.btn.ghost {
-  border: 1px solid rgba(246, 200, 95, 0.32);
-  background: rgba(255, 255, 255, 0.045);
-  color: #fff7e8;
-}
-
-/* Tarjetas premium */
-.card,
-.legal-card,
-.timeline article,
-.notice,
-.data-card {
-  border: 1px solid rgba(246, 200, 95, 0.22);
-  background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.026)),
-    radial-gradient(circle at top right, rgba(246, 200, 95, 0.08), transparent 34%);
-  box-shadow:
-    0 20px 70px rgba(0, 0, 0, 0.34),
-    inset 0 1px 0 rgba(255, 255, 255, 0.06);
-}
-
-.card:hover,
-.legal-card:hover,
-.data-card:hover,
-.timeline article:hover {
-  border-color: rgba(246, 200, 95, 0.52);
-  box-shadow:
-    0 28px 90px rgba(0, 0, 0, 0.45),
-    0 0 34px rgba(246, 200, 95, 0.08);
-}
-
-.card h3,
-.legal-card h3,
-.timeline h3,
-.data-card h3 {
-  color: #fff7e8;
-}
-
-.card p,
-.legal-card p,
-.timeline p,
-.data-card p,
-.notice p {
-  color: var(--muted);
-}
-
-.data-card .tag {
-  color: #130d03;
-  background:
-    linear-gradient(135deg, #fff0a8, #f6c85f 58%, #b8892f);
-  box-shadow: 0 8px 24px rgba(246, 200, 95, 0.14);
-}
-
-.data-card a,
-.legal-card a {
-  color: #61c8ff;
-  text-shadow: 0 0 14px rgba(97, 200, 255, 0.12);
-}
-
-/* Avisos legales: cofre dorado */
-.notice {
-  border-color: rgba(246, 200, 95, 0.34);
-  background:
-    linear-gradient(135deg, rgba(6, 26, 45, 0.76), rgba(52, 14, 23, 0.52)),
-    rgba(255, 255, 255, 0.05);
-}
-
-/* Tarjeta del escenario */
-.stage-card {
-  border-color: rgba(246, 200, 95, 0.34);
-  background:
-    radial-gradient(circle at 50% 26%, rgba(246, 200, 95, 0.22), transparent 38%),
-    radial-gradient(circle at 80% 70%, rgba(181, 18, 42, 0.18), transparent 44%),
-    linear-gradient(145deg, rgba(255,255,255,0.10), rgba(255,255,255,0.025));
-}
-
-/* Footer elegante */
-.site-footer {
-  background:
-    linear-gradient(90deg, rgba(3,4,7,0.98), rgba(6,18,32,0.92));
-  border-top: 1px solid rgba(246, 200, 95, 0.18);
-}
-
-/* Scrollbar estilo museo */
-::-webkit-scrollbar {
-  width: 12px;
-}
-
-::-webkit-scrollbar-track {
-  background: #030407;
-}
-
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(var(--gold), var(--gold-deep), var(--thriller-red));
-  border-radius: 999px;
-  border: 3px solid #030407;
-}
-
-/* Ajuste móvil */
-@media (max-width: 900px) {
-  .main-nav {
-    border-color: rgba(246, 200, 95, 0.28);
-    background: rgba(3, 4, 7, 0.98);
+  .brand::after {
+    display: none;
   }
 }
 
-/* =========================================================
-   Royal Moonwalk Noir V2 - Corrección final
-   Menos magenta, más negro, azul noche y oro real.
-   ========================================================= */
-
-body {
-  background:
-    radial-gradient(circle at 10% 8%, rgba(6, 38, 62, 0.82), transparent 30%),
-    radial-gradient(circle at 86% 18%, rgba(246, 200, 95, 0.10), transparent 28%),
-    radial-gradient(circle at 92% 72%, rgba(181, 18, 42, 0.08), transparent 24%),
-    linear-gradient(135deg, #020305 0%, #06101b 42%, #050506 72%, #090403 100%);
-  color: var(--text);
-}
-
-.hero,
-.page-hero {
-  background:
-    radial-gradient(circle at 16% 28%, rgba(4, 45, 76, 0.96), transparent 36%),
-    radial-gradient(circle at 82% 28%, rgba(246, 200, 95, 0.11), transparent 30%),
-    radial-gradient(circle at 88% 72%, rgba(181, 18, 42, 0.075), transparent 30%),
-    linear-gradient(135deg, #030407 0%, #071421 48%, #090607 100%);
-  border-bottom: 1px solid rgba(246, 200, 95, 0.16);
-}
-
-/* Reduce el rojo visual general y lo deja como acento fino */
-:root {
-  --red: #8f1024;
-  --thriller-red: #8f1024;
-}
-
-/* Header más negro, más joya, menos gris */
-.site-header {
-  background:
-    linear-gradient(90deg, rgba(2, 3, 5, 0.98), rgba(4, 8, 13, 0.96));
-  border-bottom: 1px solid rgba(246, 200, 95, 0.26);
-}
-
-/* Títulos con presencia de lujo */
-h1,
-h2 {
-  color: #fff5df;
-  text-shadow:
-    0 3px 0 rgba(0, 0, 0, 0.48),
-    0 0 18px rgba(246, 200, 95, 0.10);
-}
-
-/* Subtítulos dorados más elegantes */
-.eyebrow {
-  color: #ffd978;
-  letter-spacing: 0.22em;
-}
-
-/* Tarjetas más negras y doradas */
-.card,
-.legal-card,
-.timeline article,
-.notice,
-.data-card {
-  border-color: rgba(246, 200, 95, 0.30);
-  background:
-    radial-gradient(circle at 88% 16%, rgba(246, 200, 95, 0.10), transparent 26%),
-    linear-gradient(145deg, rgba(255, 255, 255, 0.065), rgba(255, 255, 255, 0.018)),
-    linear-gradient(135deg, rgba(3, 9, 16, 0.92), rgba(8, 5, 8, 0.92));
-}
-
-/* Avisos legales: ahora más cofre dorado, menos vino/magenta */
-.notice {
-  border-color: rgba(246, 200, 95, 0.42);
-  background:
-    radial-gradient(circle at 95% 10%, rgba(246, 200, 95, 0.12), transparent 28%),
-    linear-gradient(135deg, rgba(4, 18, 31, 0.88), rgba(8, 7, 8, 0.88));
-}
-
-/* Tarjetas de contenido con lujo oscuro */
-.data-card {
-  background:
-    radial-gradient(circle at 92% 12%, rgba(246, 200, 95, 0.10), transparent 24%),
-    linear-gradient(135deg, rgba(4, 15, 26, 0.92), rgba(8, 8, 10, 0.94));
-}
-
-/* Mantener azul como acento técnico, no como fondo dominante */
-.data-card a,
-.legal-card a {
-  color: #6dd0ff;
-}
-
-/* Scrollbar más oro, rojo casi oculto */
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(#ffe08a, #f6c85f, #b8892f, #8f1024);
-}
-
-/* El rojo Thriller queda solo en microdetalles */
-.main-nav a::after {
-  background: linear-gradient(90deg, var(--gold), #fff0a8, rgba(143, 16, 36, 0.75));
-}
-
-.video-card::before,
-.concert-card::before,
-.doc-card::before {
-  color: rgba(246, 200, 95, 0.25);
-}
-
-/* =========================================================
-   Royal Moonwalk Noir V3 - Black & Gold definitivo
-   Dominante: negro lujo + dorado intenso.
-   Secundario: azul petróleo casi negro.
-   Rojo Thriller: mínimo, solo detalle dramático.
-   ========================================================= */
-
-:root {
-  --bg: #020202;
-  --bg-soft: #070707;
-  --card: rgba(10, 10, 10, 0.92);
-  --card-border: rgba(255, 205, 85, 0.55);
-  --text: #fff4d6;
-  --muted: #e0cfaa;
-  --gold: #ffd15c;
-  --gold-deep: #a86f12;
-  --blue: #0b1b25;
-  --purple: #111111;
-  --red: #6d0715;
-  --thriller-red: #6d0715;
-}
-
-/* Fondo general: negro real, casi sin color invasivo */
-html,
-body {
-  background:
-    radial-gradient(circle at 12% 15%, rgba(255, 209, 92, 0.08), transparent 22%),
-    radial-gradient(circle at 90% 12%, rgba(255, 209, 92, 0.06), transparent 24%),
-    linear-gradient(135deg, #010101 0%, #040404 42%, #080604 72%, #000000 100%) !important;
-  color: #fff4d6 !important;
-}
-
-/* Heroes: negro/dorado, sin magenta dominante */
-.hero,
-.page-hero {
-  background:
-    radial-gradient(circle at 10% 25%, rgba(255, 209, 92, 0.12), transparent 24%),
-    radial-gradient(circle at 85% 30%, rgba(255, 209, 92, 0.09), transparent 24%),
-    radial-gradient(circle at 88% 80%, rgba(109, 7, 21, 0.06), transparent 20%),
-    linear-gradient(135deg, #020202 0%, #060606 48%, #0b0905 100%) !important;
-  border-bottom: 1px solid rgba(255, 209, 92, 0.35) !important;
-}
-
-/* Cabecera: negro piano + línea oro */
-.site-header {
-  background: #020202 !important;
-  border-bottom: 1px solid rgba(255, 209, 92, 0.48) !important;
-  box-shadow:
-    0 14px 40px rgba(0, 0, 0, 0.75),
-    0 0 22px rgba(255, 209, 92, 0.06) !important;
-}
-
-/* Marca */
-.brand {
-  color: #fff4d6 !important;
-}
-
-.brand-mark {
-  color: #ffd15c !important;
-  filter: drop-shadow(0 0 16px rgba(255, 209, 92, 0.95)) !important;
-}
-
-/* Menú dorado elegante */
-.main-nav a {
-  color: #e8d9b6 !important;
-}
-
-.main-nav a:hover {
-  color: #ffd15c !important;
-}
-
-.main-nav a::after {
-  background: linear-gradient(90deg, #ffd15c, #fff2a8, #8a0718) !important;
-}
-
-/* Títulos marfil con sombra negra */
-h1,
-h2 {
-  color: #fff4d6 !important;
-  text-shadow:
-    0 4px 0 rgba(0, 0, 0, 0.75),
-    0 0 24px rgba(255, 209, 92, 0.08) !important;
-}
-
-/* Etiquetas superiores bien doradas */
-.eyebrow {
-  color: #ffd15c !important;
-  text-shadow: 0 0 18px rgba(255, 209, 92, 0.35) !important;
-}
-
-/* Textos */
-.hero-text,
-.page-hero p:not(.eyebrow),
-.card p,
-.legal-card p,
-.timeline p,
-.data-card p,
-.notice p {
-  color: #e0cfaa !important;
-}
-
-/* Tarjetas: negro lujo con borde oro visible */
-.card,
-.legal-card,
-.timeline article,
-.notice,
-.data-card {
-  background:
-    radial-gradient(circle at 95% 10%, rgba(255, 209, 92, 0.10), transparent 22%),
-    linear-gradient(145deg, rgba(18, 18, 18, 0.98), rgba(4, 4, 4, 0.98)) !important;
-  border: 1px solid rgba(255, 209, 92, 0.46) !important;
-  box-shadow:
-    0 22px 80px rgba(0, 0, 0, 0.62),
-    inset 0 1px 0 rgba(255, 244, 214, 0.06) !important;
-}
-
-.card:hover,
-.legal-card:hover,
-.timeline article:hover,
-.data-card:hover {
-  border-color: rgba(255, 209, 92, 0.88) !important;
-  box-shadow:
-    0 30px 100px rgba(0, 0, 0, 0.72),
-    0 0 34px rgba(255, 209, 92, 0.14) !important;
-}
-
-/* Títulos de tarjetas */
-.card h3,
-.legal-card h3,
-.timeline h3,
-.data-card h3 {
-  color: #fff4d6 !important;
-}
-
-/* Tags: oro fuerte */
-.data-card .tag,
-.timeline span {
-  color: #120b01 !important;
-  background: linear-gradient(135deg, #fff3ad 0%, #ffd15c 48%, #a86f12 100%) !important;
-  box-shadow:
-    0 8px 24px rgba(255, 209, 92, 0.22),
-    inset 0 1px 0 rgba(255, 255, 255, 0.55) !important;
-}
-
-/* Links: dorado, no azul */
-.data-card a,
-.legal-card a {
-  color: #ffd15c !important;
-  text-shadow: 0 0 14px rgba(255, 209, 92, 0.18) !important;
-}
-
-/* Avisos legales como placa dorada */
-.notice {
-  background:
-    linear-gradient(135deg, rgba(12, 12, 12, 0.98), rgba(3, 3, 3, 0.98)) !important;
-  border-color: rgba(255, 209, 92, 0.62) !important;
-}
-
-/* Botones */
-.btn.primary {
-  color: #100900 !important;
-  background: linear-gradient(135deg, #fff3ad 0%, #ffd15c 48%, #a86f12 100%) !important;
-}
-
-.btn.ghost {
-  color: #fff4d6 !important;
-  border-color: rgba(255, 209, 92, 0.58) !important;
-  background: rgba(255, 209, 92, 0.045) !important;
-}
-
-/* Iconos decorativos de cards */
-.video-card::before,
-.concert-card::before,
-.doc-card::before {
-  color: rgba(255, 209, 92, 0.28) !important;
-}
-
-/* Footer */
-.site-footer {
-  background: #020202 !important;
-  border-top: 1px solid rgba(255, 209, 92, 0.42) !important;
-}
-
-/* Scrollbar oro con rojo mínimo al final */
-::-webkit-scrollbar-track {
-  background: #020202 !important;
-}
-
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(#fff3ad, #ffd15c, #a86f12, #6d0715) !important;
-  border: 3px solid #020202 !important;
-}
-
-/* Limpieza visual: quitar bloques azul/magenta grandes */
-.section {
-  background: transparent !important;
-}
-
-/* =========================================================
-   Royal Pharaoh Gold V4
-   Oro faraónico + brillo Billie Jean + rojo Thriller ritual
-   ========================================================= */
-
-:root {
-  --pharaoh-gold: #ffd700;
-  --pharaoh-gold-soft: rgba(255, 215, 0, 0.34);
-  --pharaoh-gold-glow: rgba(255, 215, 0, 0.55);
-  --blood-red: #9d001b;
-  --blood-red-deep: #4a000b;
-  --billie-glow: rgba(255, 244, 178, 0.22);
-}
-
-/* Bordes principales más gruesos y con brillo dorado */
-.site-header,
-.hero,
-.page-hero,
-.site-footer {
-  border-color: rgba(255, 215, 0, 0.62) !important;
-}
-
-.site-header {
-  border-bottom: 3px solid rgba(255, 215, 0, 0.72) !important;
-  box-shadow:
-    0 10px 38px rgba(0, 0, 0, 0.85),
-    0 0 18px rgba(255, 215, 0, 0.24),
-    0 0 42px rgba(255, 215, 0, 0.10) !important;
-}
-
-.hero,
-.page-hero {
-  border-bottom: 3px solid rgba(255, 215, 0, 0.58) !important;
-  background:
-    radial-gradient(circle at 11% 22%, rgba(255, 215, 0, 0.16), transparent 22%),
-    radial-gradient(circle at 18% 70%, rgba(255, 244, 178, 0.10), transparent 18%),
-    radial-gradient(circle at 82% 18%, rgba(255, 215, 0, 0.10), transparent 22%),
-    radial-gradient(circle at 91% 80%, rgba(157, 0, 27, 0.16), transparent 24%),
-    linear-gradient(135deg, #010101 0%, #050402 44%, #090500 68%, #120006 100%) !important;
-  box-shadow:
-    inset 0 -1px 0 rgba(255, 244, 178, 0.22),
-    0 0 42px rgba(255, 215, 0, 0.08) !important;
-}
-
-/* Línea superior estilo templo faraónico */
-.hero::before,
-.page-hero::before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: clamp(18px, 5vw, 70px);
-  right: clamp(18px, 5vw, 70px);
-  top: 26px;
-  height: 4px;
-  border-radius: 999px;
-  background:
-    linear-gradient(90deg,
-      transparent,
-      rgba(255, 215, 0, 0.25),
-      #ffd700,
-      rgba(255, 244, 178, 0.92),
-      #ffd700,
-      rgba(157, 0, 27, 0.45),
-      transparent
-    );
-  box-shadow:
-    0 0 18px rgba(255, 215, 0, 0.65),
-    0 0 42px rgba(255, 215, 0, 0.22);
-  pointer-events: none;
-}
-
-.hero,
-.page-hero {
-  position: relative;
-}
-
-/* Títulos con aura dorada faraónica */
-h1,
-h2 {
-  color: #fff2c4 !important;
-  text-shadow:
-    0 4px 0 rgba(0, 0, 0, 0.82),
-    0 0 16px rgba(255, 215, 0, 0.24),
-    0 0 38px rgba(255, 215, 0, 0.10) !important;
-}
-
-/* Eyebrow como inscripción sagrada */
-.eyebrow {
-  color: #ffd700 !important;
-  text-shadow:
-    0 0 10px rgba(255, 215, 0, 0.82),
-    0 0 28px rgba(255, 215, 0, 0.32) !important;
-}
-
-/* Tarjetas con marco oro más fuerte */
-.card,
-.legal-card,
-.timeline article,
-.notice,
-.data-card {
-  border: 2px solid rgba(255, 215, 0, 0.52) !important;
-  background:
-    radial-gradient(circle at 94% 12%, rgba(255, 215, 0, 0.12), transparent 20%),
-    radial-gradient(circle at 8% 100%, rgba(157, 0, 27, 0.08), transparent 24%),
-    linear-gradient(145deg, rgba(16, 13, 7, 0.98), rgba(3, 3, 3, 0.98)) !important;
-  box-shadow:
-    0 24px 90px rgba(0, 0, 0, 0.72),
-    0 0 18px rgba(255, 215, 0, 0.10),
-    inset 0 1px 0 rgba(255, 244, 178, 0.12) !important;
-}
-
-.card:hover,
-.legal-card:hover,
-.timeline article:hover,
-.data-card:hover {
-  border-color: rgba(255, 215, 0, 0.95) !important;
-  box-shadow:
-    0 32px 110px rgba(0, 0, 0, 0.78),
-    0 0 26px rgba(255, 215, 0, 0.32),
-    0 0 62px rgba(255, 215, 0, 0.12) !important;
-}
-
-/* Avisos legales como placa de oro oscuro */
-.notice {
-  border: 2px solid rgba(255, 215, 0, 0.68) !important;
-  background:
-    radial-gradient(circle at 92% 18%, rgba(255, 215, 0, 0.16), transparent 22%),
-    linear-gradient(135deg, rgba(18, 14, 5, 0.98), rgba(3, 3, 3, 0.98)) !important;
-  box-shadow:
-    0 0 24px rgba(255, 215, 0, 0.16),
-    inset 0 0 28px rgba(255, 215, 0, 0.035) !important;
-}
-
-/* Tags oro más intenso tipo medallón */
-.data-card .tag,
-.timeline span {
-  background:
-    linear-gradient(135deg, #fff7b8 0%, #ffd700 38%, #c48a15 70%, #7a4700 100%) !important;
-  border: 1px solid rgba(255, 244, 178, 0.85) !important;
-  box-shadow:
-    0 0 14px rgba(255, 215, 0, 0.32),
-    0 6px 22px rgba(0, 0, 0, 0.35),
-    inset 0 1px 0 rgba(255, 255, 255, 0.70) !important;
-}
-
-/* Links dorados estilo joya */
-.data-card a,
-.legal-card a {
-  color: #ffd700 !important;
-  text-shadow:
-    0 0 10px rgba(255, 215, 0, 0.45),
-    0 0 22px rgba(255, 215, 0, 0.14) !important;
-}
-
-/* Detalle Billie Jean: líneas luminosas muy sutiles en secciones */
-.section {
-  background:
-    linear-gradient(90deg, rgba(255, 215, 0, 0.035) 1px, transparent 1px),
-    transparent !important;
-  background-size: 120px 120px !important;
-}
-
-/* Detalle rojo Thriller: solo en hover y scrollbar */
-.main-nav a:hover::after {
-  height: 3px !important;
-  background:
-    linear-gradient(90deg, #ffd700, #fff2a8, #9d001b, #4a000b) !important;
-  box-shadow:
-    0 0 10px rgba(255, 215, 0, 0.56),
-    0 0 16px rgba(157, 0, 27, 0.28);
-}
-
-::-webkit-scrollbar-thumb {
-  background:
-    linear-gradient(#fff7b8, #ffd700, #b97912, #9d001b, #4a000b) !important;
-  box-shadow:
-    0 0 12px rgba(255, 215, 0, 0.65) !important;
-}
-
-/* Decoración de iconos como símbolos de templo */
-.video-card::before,
-.concert-card::before,
-.doc-card::before {
-  color: rgba(255, 215, 0, 0.38) !important;
-  text-shadow:
-    0 0 14px rgba(255, 215, 0, 0.42),
-    0 0 28px rgba(255, 215, 0, 0.18) !important;
-}
-
-/* Marca más sagrada */
-.brand {
-  text-shadow:
-    0 0 10px rgba(255, 215, 0, 0.22),
-    0 0 24px rgba(255, 215, 0, 0.12) !important;
-}
-
-.brand::after {
-  content: "";
-  display: inline-block;
-  width: 38px;
-  height: 2px;
-  margin-left: 10px;
-  background: linear-gradient(90deg, #ffd700, transparent);
-  box-shadow: 0 0 12px rgba(255, 215, 0, 0.55);
-}
-
-/* =========================================================
-   Royal Moonwalk Noir V5 - Oro 24K metálico elegante
-   Menos amarillo fosforescente, más oro puro, serio y uniforme.
-   ========================================================= */
-
-:root {
-  --pharaoh-gold: #d4af37;
-  --pharaoh-gold-soft: rgba(212, 175, 55, 0.24);
-  --pharaoh-gold-glow: rgba(212, 175, 55, 0.28);
-  --gold: #d4af37;
-  --gold-deep: #8a6a18;
-  --text: #f7ead0;
-  --muted: #cdbf9f;
-}
-
-/* Fondo más sobrio: negro lujo + oro metálico suave */
-html,
-body {
-  background:
-    radial-gradient(circle at 12% 15%, rgba(212, 175, 55, 0.045), transparent 22%),
-    radial-gradient(circle at 90% 12%, rgba(212, 175, 55, 0.035), transparent 24%),
-    linear-gradient(135deg, #010101 0%, #040404 48%, #080604 78%, #000000 100%) !important;
-}
-
-/* Hero más serio, menos amarillo brillante */
-.hero,
-.page-hero {
-  background:
-    radial-gradient(circle at 10% 25%, rgba(212, 175, 55, 0.07), transparent 24%),
-    radial-gradient(circle at 82% 22%, rgba(212, 175, 55, 0.045), transparent 24%),
-    radial-gradient(circle at 92% 78%, rgba(109, 7, 21, 0.075), transparent 22%),
-    linear-gradient(135deg, #010101 0%, #040403 52%, #0b0704 100%) !important;
-  border-bottom: 2px solid rgba(212, 175, 55, 0.46) !important;
-  box-shadow:
-    inset 0 -1px 0 rgba(247, 234, 208, 0.12),
-    0 0 22px rgba(212, 175, 55, 0.045) !important;
-}
-
-/* Línea faraónica más fina, metálica y menos chillona */
-.hero::before,
-.page-hero::before {
-  height: 3px !important;
-  background:
-    linear-gradient(90deg,
-      transparent,
-      rgba(138, 106, 24, 0.28),
-      #8a6a18,
-      #d4af37,
-      #f0d98a,
-      #d4af37,
-      rgba(109, 7, 21, 0.24),
-      transparent
-    ) !important;
-  box-shadow:
-    0 0 10px rgba(212, 175, 55, 0.28),
-    0 0 22px rgba(212, 175, 55, 0.10) !important;
-}
-
-/* Header negro con oro serio */
-.site-header {
-  border-bottom: 2px solid rgba(212, 175, 55, 0.44) !important;
-  box-shadow:
-    0 10px 34px rgba(0, 0, 0, 0.78),
-    0 0 14px rgba(212, 175, 55, 0.08) !important;
-}
-
-/* Marca menos luminosa, más joya metálica */
-.brand-mark {
-  color: #d4af37 !important;
-  filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.48)) !important;
-}
-
-.brand {
-  color: #f7ead0 !important;
-  text-shadow:
-    0 0 8px rgba(212, 175, 55, 0.14),
-    0 0 16px rgba(212, 175, 55, 0.06) !important;
-}
-
-.brand::after {
-  background: linear-gradient(90deg, #d4af37, transparent) !important;
-  box-shadow: 0 0 8px rgba(212, 175, 55, 0.28) !important;
-}
-
-/* Títulos: marfil cálido con aura mínima */
-h1,
-h2 {
-  color: #f7ead0 !important;
-  text-shadow:
-    0 4px 0 rgba(0, 0, 0, 0.78),
-    0 0 10px rgba(212, 175, 55, 0.14),
-    0 0 22px rgba(212, 175, 55, 0.055) !important;
-}
-
-/* Subtítulos dorados metálicos, no neón */
-.eyebrow {
-  color: #d4af37 !important;
-  text-shadow:
-    0 0 7px rgba(212, 175, 55, 0.36),
-    0 0 16px rgba(212, 175, 55, 0.12) !important;
-}
-
-/* Textos más cálidos y legibles */
-.hero-text,
-.page-hero p:not(.eyebrow),
-.card p,
-.legal-card p,
-.timeline p,
-.data-card p,
-.notice p {
-  color: #cdbf9f !important;
-}
-
-/* Tarjetas: borde oro 24K, más fino y elegante */
-.card,
-.legal-card,
-.timeline article,
-.notice,
-.data-card {
-  border: 1.5px solid rgba(212, 175, 55, 0.42) !important;
-  background:
-    radial-gradient(circle at 94% 12%, rgba(212, 175, 55, 0.065), transparent 20%),
-    radial-gradient(circle at 8% 100%, rgba(109, 7, 21, 0.045), transparent 24%),
-    linear-gradient(145deg, rgba(14, 12, 8, 0.98), rgba(3, 3, 3, 0.98)) !important;
-  box-shadow:
-    0 22px 82px rgba(0, 0, 0, 0.68),
-    0 0 10px rgba(212, 175, 55, 0.055),
-    inset 0 1px 0 rgba(247, 234, 208, 0.08) !important;
-}
-
-.card:hover,
-.legal-card:hover,
-.timeline article:hover,
-.data-card:hover {
-  border-color: rgba(212, 175, 55, 0.68) !important;
-  box-shadow:
-    0 30px 100px rgba(0, 0, 0, 0.74),
-    0 0 18px rgba(212, 175, 55, 0.16),
-    0 0 36px rgba(212, 175, 55, 0.055) !important;
-}
-
-/* Avisos: placa de oro oscuro, no amarillo */
-.notice {
-  border: 1.5px solid rgba(212, 175, 55, 0.54) !important;
-  background:
-    radial-gradient(circle at 92% 18%, rgba(212, 175, 55, 0.075), transparent 22%),
-    linear-gradient(135deg, rgba(12, 10, 6, 0.98), rgba(3, 3, 3, 0.98)) !important;
-  box-shadow:
-    0 0 16px rgba(212, 175, 55, 0.08),
-    inset 0 0 20px rgba(212, 175, 55, 0.025) !important;
-}
-
-/* Tags: oro metálico 24K */
-.data-card .tag,
-.timeline span {
-  background:
-    linear-gradient(135deg, #f7e7a3 0%, #d4af37 42%, #a67c18 72%, #6f4f09 100%) !important;
-  border: 1px solid rgba(247, 231, 163, 0.58) !important;
-  box-shadow:
-    0 0 8px rgba(212, 175, 55, 0.20),
-    0 6px 18px rgba(0, 0, 0, 0.36),
-    inset 0 1px 0 rgba(255, 255, 255, 0.42) !important;
-}
-
-/* Links oro suave */
-.data-card a,
-.legal-card a {
-  color: #d4af37 !important;
-  text-shadow:
-    0 0 8px rgba(212, 175, 55, 0.24),
-    0 0 14px rgba(212, 175, 55, 0.08) !important;
-}
-
-/* Quitar la sensación de rejilla amarilla fuerte */
-.section {
-  background:
-    linear-gradient(90deg, rgba(212, 175, 55, 0.018) 1px, transparent 1px),
-    transparent !important;
-  background-size: 140px 140px !important;
-}
-
-/* Rojo Thriller: profundo y mínimo */
-.main-nav a:hover::after {
-  height: 2px !important;
-  background:
-    linear-gradient(90deg, #d4af37, #f0d98a, #6d0715) !important;
-  box-shadow:
-    0 0 8px rgba(212, 175, 55, 0.24),
-    0 0 10px rgba(109, 7, 21, 0.18) !important;
-}
-
-/* Scrollbar oro viejo + rojo oscuro al final */
-::-webkit-scrollbar-thumb {
-  background:
-    linear-gradient(#f7e7a3, #d4af37, #8a6a18, #6d0715, #350007) !important;
-  box-shadow:
-    0 0 8px rgba(212, 175, 55, 0.28) !important;
-}
-
-/* Iconos decorativos menos chillones */
-.video-card::before,
-.concert-card::before,
-.doc-card::before {
-  color: rgba(212, 175, 55, 0.24) !important;
-  text-shadow:
-    0 0 8px rgba(212, 175, 55, 0.20),
-    0 0 16px rgba(212, 175, 55, 0.07) !important;
+@media (max-width: 560px) {
+  .site-header {
+    padding: 16px 18px;
+  }
+
+  .hero,
+  .page-hero,
+  .section {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .hero,
+  .page-hero {
+    padding-top: 90px;
+  }
+
+  h1 {
+    font-size: clamp(2.25rem, 15vw, 4.4rem);
+  }
 }
