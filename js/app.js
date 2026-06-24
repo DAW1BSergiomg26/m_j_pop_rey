@@ -151,3 +151,29 @@ async function loadConcerts() {
 }
 
 loadConcerts();
+
+async function loadDocs() {
+  const grid = document.querySelector("#docs-grid");
+  if (!grid) return;
+
+  try {
+    const response = await fetch("data/documentales.json");
+    const docs = await response.json();
+
+    grid.innerHTML = docs.map((doc) => `
+      <article class="data-card doc-card">
+        <span class="tag">${doc.tipo} · ${doc.anio}</span>
+        <h3>${doc.titulo}</h3>
+        <p><strong>Estado:</strong> ${doc.estado}</p>
+        <p>${doc.enfoque}</p>
+        <p><strong>Fiabilidad:</strong> ${doc.fiabilidad}</p>
+        <p><strong>Acceso legal:</strong> ${doc.accesoLegal}</p>
+        <p><strong>Derechos:</strong> ${doc.riesgoCopyright}</p>
+      </article>
+    `).join("");
+  } catch (error) {
+    grid.innerHTML = "<p>No se pudieron cargar los documentales. Revisa data/documentales.json.</p>";
+  }
+}
+
+loadDocs();
