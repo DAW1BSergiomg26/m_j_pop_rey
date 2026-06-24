@@ -1,0 +1,266 @@
+/* =========================================================
+   Discografía Premium - Archivo Moonwalk
+   Archivo musical legal con fichas de era, valor y acceso oficial.
+   ========================================================= */
+
+.discografia-hero {
+  min-height: 64vh;
+}
+
+.discografia-hero p:not(.eyebrow) {
+  max-width: 850px;
+}
+
+.discografia-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+  gap: 24px;
+  align-items: stretch;
+}
+
+.discografia-panel {
+  position: relative;
+  padding: 28px;
+  overflow: hidden;
+  border: 1px solid rgba(212, 175, 55, 0.38);
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at 82% 18%, rgba(212, 175, 55, 0.10), transparent 28%),
+    radial-gradient(circle at 14% 88%, rgba(109, 7, 21, 0.12), transparent 28%),
+    linear-gradient(145deg, rgba(14, 11, 5, 0.94), rgba(0, 0, 0, 0.96));
+  box-shadow:
+    inset 0 1px 0 rgba(247, 231, 163, 0.09),
+    0 24px 80px rgba(0, 0, 0, 0.52);
+}
+
+.discografia-panel::before {
+  content: "";
+  position: absolute;
+  left: 22px;
+  right: 22px;
+  top: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), #fff2ad, transparent);
+  box-shadow: 0 0 18px rgba(212, 175, 55, 0.18);
+}
+
+.discografia-panel h2,
+.discografia-panel h3 {
+  margin-bottom: 14px;
+}
+
+.discografia-panel p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.discografia-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.discografia-stat {
+  padding: 16px;
+  border: 1px solid rgba(212, 175, 55, 0.24);
+  border-radius: 18px;
+  background: rgba(212, 175, 55, 0.04);
+}
+
+.discografia-stat strong {
+  display: block;
+  color: var(--gold-light);
+  font-size: 1.55rem;
+  line-height: 1;
+}
+
+.discografia-stat span {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.discografia-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.album-card {
+  position: relative;
+  min-height: 410px;
+  display: flex;
+  flex-direction: column;
+  padding: 26px;
+  overflow: hidden;
+  border: 1px solid rgba(212, 175, 55, 0.42);
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at 50% 20%, rgba(247, 231, 163, 0.115), transparent 26%),
+    radial-gradient(circle at 86% 82%, rgba(109, 7, 21, 0.14), transparent 32%),
+    linear-gradient(145deg, rgba(14, 11, 5, 0.95), rgba(0, 0, 0, 0.97));
+  box-shadow:
+    inset 0 1px 0 rgba(247, 231, 163, 0.10),
+    0 24px 92px rgba(0, 0, 0, 0.56);
+  transition:
+    transform 0.24s ease,
+    border-color 0.24s ease,
+    box-shadow 0.24s ease;
+}
+
+.album-card::before {
+  content: "";
+  position: absolute;
+  inset: 16px;
+  border: 1px solid rgba(212, 175, 55, 0.10);
+  border-radius: 22px;
+  pointer-events: none;
+}
+
+.album-card::after {
+  content: "";
+  position: absolute;
+  left: -18%;
+  right: -18%;
+  top: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), #fff2ad, var(--thriller-red), transparent);
+  opacity: 0.78;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.18);
+}
+
+.album-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(247, 231, 163, 0.72);
+  box-shadow:
+    inset 0 1px 0 rgba(247, 231, 163, 0.13),
+    0 30px 110px rgba(0, 0, 0, 0.66),
+    0 0 30px rgba(212, 175, 55, 0.10);
+}
+
+.album-cover-symbol {
+  width: 88px;
+  height: 88px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 22px;
+  color: #fff0bb;
+  font-size: 2.75rem;
+  border: 1px solid rgba(212, 175, 55, 0.36);
+  border-radius: 26px;
+  background:
+    radial-gradient(circle, rgba(247, 231, 163, 0.18), transparent 68%),
+    rgba(212, 175, 55, 0.045);
+  filter:
+    drop-shadow(0 0 10px rgba(247, 231, 163, 0.22))
+    drop-shadow(0 0 22px rgba(212, 175, 55, 0.10));
+}
+
+.album-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.album-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 4px 10px;
+  color: var(--gold-light);
+  border: 1px solid rgba(212, 175, 55, 0.26);
+  border-radius: 999px;
+  background: rgba(212, 175, 55, 0.055);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+}
+
+.album-card h3 {
+  margin-bottom: 10px;
+  color: var(--text-strong);
+  font-size: clamp(1.55rem, 2.4vw, 2.15rem);
+  line-height: 0.98;
+}
+
+.album-era {
+  margin-bottom: 12px;
+  color: var(--gold);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.album-description,
+.album-note {
+  color: var(--muted);
+}
+
+.album-note {
+  margin-top: auto;
+  padding-top: 16px;
+  font-size: 0.94rem;
+}
+
+.album-tracks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.album-track {
+  padding: 5px 9px;
+  color: #f7ead0;
+  border: 1px solid rgba(212, 175, 55, 0.20);
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.24);
+  font-size: 0.82rem;
+}
+
+.album-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  margin-top: 18px;
+  padding: 0 16px;
+  color: #100900;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #fff2ad, var(--gold), var(--gold-deep));
+  font-weight: 900;
+  box-shadow:
+    0 14px 42px rgba(212, 175, 55, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.46);
+}
+
+@media (max-width: 1100px) {
+  .discografia-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .discografia-intro {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .discografia-grid,
+  .discografia-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .album-card {
+    min-height: auto;
+    padding: 24px;
+  }
+
+  .album-cover-symbol {
+    width: 74px;
+    height: 74px;
+    font-size: 2.25rem;
+  }
+}
