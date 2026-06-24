@@ -1420,3 +1420,78 @@ main,
     top: 30px;
   }
 }
+
+/* =========================================================
+   Navegación final responsive
+   Menú compacto, página activa y móvil preparado para crecer.
+   ========================================================= */
+
+.main-nav {
+  gap: clamp(12px, 1.5vw, 26px);
+}
+
+.main-nav a {
+  white-space: nowrap;
+}
+
+.main-nav a.active-link {
+  color: var(--gold) !important;
+  text-shadow:
+    0 0 8px rgba(212, 175, 55, 0.28),
+    0 0 18px rgba(212, 175, 55, 0.12);
+}
+
+.main-nav a.active-link::after {
+  width: 100%;
+  background:
+    linear-gradient(90deg, var(--gold), #f7e7a3, var(--thriller-red)) !important;
+}
+
+/* Cuando hay muchas secciones, el header respira mejor */
+@media (min-width: 901px) and (max-width: 1180px) {
+  .site-header {
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
+  .main-nav {
+    gap: 14px;
+    font-size: 0.92rem;
+  }
+
+  .brand span {
+    font-size: 0.96rem;
+  }
+
+  .brand-logo {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+/* Menú móvil con scroll si el proyecto sigue creciendo */
+@media (max-width: 900px) {
+  .main-nav {
+    max-height: calc(100vh - 110px);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--gold) #030303;
+  }
+
+  .main-nav a.active-link {
+    border-color: rgba(212, 175, 55, 0.72) !important;
+    background:
+      linear-gradient(135deg, rgba(212, 175, 55, 0.16), rgba(109, 7, 21, 0.08)) !important;
+    box-shadow:
+      inset 0 1px 0 rgba(247, 234, 208, 0.10),
+      0 0 14px rgba(212, 175, 55, 0.10);
+  }
+
+  .main-nav a.active-link::after {
+    width: 0;
+  }
+
+  body.menu-is-open {
+    overflow: hidden;
+  }
+}
