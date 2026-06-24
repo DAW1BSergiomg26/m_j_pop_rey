@@ -1,56 +1,122 @@
-[
+﻿[
   {
-    "titulo": "MichaelJackson.com",
-    "tipo": "Web oficial",
+    "titulo": "Sitio oficial de Michael Jackson",
+    "tipo": "Fuente oficial",
+    "categoria": "Oficial / legado",
+    "descripcion": "Portal oficial con música, noticias, tienda, videos, legado y publicaciones autorizadas.",
     "url": "https://www.michaeljackson.com/",
-    "estado": "oficial",
-    "fiabilidad": "alta",
-    "valorDocumental": "alto",
-    "usoEnWeb": "Enlazar; no copiar imágenes ni material protegido sin permiso."
+    "fiabilidad": "Alta",
+    "valorDocumental": "Muy alto",
+    "derechos": "Contenido protegido; enlazar es correcto, reutilizar material requiere permiso."
   },
   {
-    "titulo": "Michael Jackson Official YouTube / VEVO",
-    "tipo": "Canal oficial de vídeo",
-    "url": "https://www.youtube.com/user/michaeljacksonVEVO",
-    "estado": "oficial",
-    "fiabilidad": "alta",
-    "valorDocumental": "alto",
-    "usoEnWeb": "Embeber vídeos oficiales si la plataforma lo permite."
+    "titulo": "Canal oficial de Michael Jackson en YouTube",
+    "tipo": "Video legal",
+    "categoria": "Videoclips / short films",
+    "descripcion": "Canal con videoclips, short films, actuaciones y contenidos publicados oficialmente.",
+    "url": "https://www.youtube.com/user/michaeljackson",
+    "fiabilidad": "Alta",
+    "valorDocumental": "Muy alto",
+    "derechos": "No descargar ni reutilizar videos sin licencia; enlazar o embeber según permisos de YouTube."
   },
   {
-    "titulo": "FBI Vault - Michael Jackson",
-    "tipo": "Documento público",
-    "url": "https://vault.fbi.gov/Michael%20Jackson",
-    "estado": "archivo público",
-    "fiabilidad": "alta",
-    "valorDocumental": "alto",
-    "usoEnWeb": "Citar y contextualizar; evitar morbo o conclusiones no documentadas."
+    "titulo": "Spotify - Michael Jackson",
+    "tipo": "Streaming legal",
+    "categoria": "Música",
+    "descripcion": "Discografía disponible en streaming legal según región.",
+    "url": "https://open.spotify.com/artist/3fMbdgg4jU18AjLCKBhRSm",
+    "fiabilidad": "Alta",
+    "valorDocumental": "Alto",
+    "derechos": "Escucha legal mediante plataforma; no descargar ni redistribuir."
   },
   {
-    "titulo": "US5255452A - Anti-gravity illusion",
-    "tipo": "Patente",
-    "url": "https://patents.google.com/patent/US5255452A/en",
-    "estado": "documento público",
-    "fiabilidad": "alta",
-    "valorDocumental": "alto",
-    "usoEnWeb": "Enlazar y explicar con lenguaje propio."
+    "titulo": "Apple Music - Michael Jackson",
+    "tipo": "Streaming legal",
+    "categoria": "Música",
+    "descripcion": "Álbumes, recopilatorios, canciones y material musical en plataforma legal.",
+    "url": "https://music.apple.com/",
+    "fiabilidad": "Alta",
+    "valorDocumental": "Alto",
+    "derechos": "Acceso mediante plataforma; no alojar archivos."
   },
   {
-    "titulo": "RIAA Gold & Platinum",
+    "titulo": "Discogs",
+    "tipo": "Base de datos musical",
+    "categoria": "Discografía / ediciones",
+    "descripcion": "Catálogo colaborativo útil para consultar ediciones, sellos, formatos, países y reediciones.",
+    "url": "https://www.discogs.com/artist/15885-Michael-Jackson",
+    "fiabilidad": "Media-alta",
+    "valorDocumental": "Alto",
+    "derechos": "Útil como referencia; verificar datos críticos con fuentes oficiales."
+  },
+  {
+    "titulo": "MusicBrainz",
+    "tipo": "Base de datos musical abierta",
+    "categoria": "Metadatos musicales",
+    "descripcion": "Base de datos estructurada para consultar lanzamientos, créditos, grabaciones e identificadores.",
+    "url": "https://musicbrainz.org/",
+    "fiabilidad": "Media-alta",
+    "valorDocumental": "Alto",
+    "derechos": "Revisar licencias de datos; citar correctamente."
+  },
+  {
+    "titulo": "AllMusic",
+    "tipo": "Base editorial musical",
+    "categoria": "Crítica / discografía",
+    "descripcion": "Reseñas, fichas de álbumes, créditos y contexto musical.",
+    "url": "https://www.allmusic.com/",
+    "fiabilidad": "Alta",
+    "valorDocumental": "Alto",
+    "derechos": "No copiar reseñas completas; usar como referencia."
+  },
+  {
+    "titulo": "Grammy",
+    "tipo": "Institución musical",
+    "categoria": "Premios",
+    "descripcion": "Consulta de premios, nominaciones, reconocimientos y contexto institucional.",
+    "url": "https://www.grammy.com/",
+    "fiabilidad": "Alta",
+    "valorDocumental": "Alto",
+    "derechos": "Contenido protegido; citar y enlazar."
+  },
+  {
+    "titulo": "RIAA",
     "tipo": "Certificaciones",
-    "url": "https://www.riaa.com/gold-platinum/?se=michael+jackson&tab_active=default-award",
-    "estado": "oficial",
-    "fiabilidad": "alta",
-    "valorDocumental": "alto",
-    "usoEnWeb": "Usar como referencia para certificaciones de EE. UU."
+    "categoria": "Ventas / certificaciones",
+    "descripcion": "Base oficial de certificaciones de discos y sencillos en Estados Unidos.",
+    "url": "https://www.riaa.com/gold-platinum/",
+    "fiabilidad": "Alta",
+    "valorDocumental": "Muy alto",
+    "derechos": "Datos consultables; no reproducir material protegido."
   },
   {
-    "titulo": "GRAMMY.com - Michael Jackson",
-    "tipo": "Premios",
-    "url": "https://www.grammy.com/artists/michael-jackson/13202/",
-    "estado": "oficial",
-    "fiabilidad": "alta",
-    "valorDocumental": "alto",
-    "usoEnWeb": "Citar premios y nominaciones."
+    "titulo": "Billboard",
+    "tipo": "Hemeroteca musical",
+    "categoria": "Listas / industria",
+    "descripcion": "Listas, noticias, análisis de industria musical y contexto histórico.",
+    "url": "https://www.billboard.com/",
+    "fiabilidad": "Alta",
+    "valorDocumental": "Alto",
+    "derechos": "Artículos protegidos; enlazar y resumir con cuidado."
+  },
+  {
+    "titulo": "Google Patents",
+    "tipo": "Base pública de patentes",
+    "categoria": "Documentos públicos",
+    "descripcion": "Útil para consultar la patente relacionada con los zapatos antigravedad de Smooth Criminal.",
+    "url": "https://patents.google.com/",
+    "fiabilidad": "Alta",
+    "valorDocumental": "Muy alto",
+    "derechos": "Documentos públicos; imágenes y reutilización deben revisarse caso por caso."
+  },
+  {
+    "titulo": "Getty Images",
+    "tipo": "Archivo fotográfico licenciado",
+    "categoria": "Fotografías",
+    "descripcion": "Fotografías editoriales y de archivo disponibles mediante licencia.",
+    "url": "https://www.gettyimages.com/",
+    "fiabilidad": "Alta",
+    "valorDocumental": "Alto",
+    "derechos": "Requiere licencia para uso web, editorial o comercial."
   }
 ]

@@ -362,3 +362,29 @@ async function loadCuriosities() {
 }
 
 loadCuriosities();
+
+async function loadSources() {
+  const grid = document.querySelector("#sources-grid");
+  if (!grid) return;
+
+  try {
+    const response = await fetch("data/fuentes.json");
+    const sources = await response.json();
+
+    grid.innerHTML = sources.map((source) => `
+      <article class="data-card source-card">
+        <span class="tag">${source.tipo} · ${source.categoria}</span>
+        <h3>${source.titulo}</h3>
+        <p>${source.descripcion}</p>
+        <p><strong>Fiabilidad:</strong> ${source.fiabilidad}</p>
+        <p><strong>Valor documental:</strong> ${source.valorDocumental}</p>
+        <p><strong>Derechos:</strong> ${source.derechos}</p>
+        <a href="${source.url}" target="_blank" rel="noopener noreferrer">Abrir fuente legal →</a>
+      </article>
+    `).join("");
+  } catch (error) {
+    grid.innerHTML = "<p>No se pudieron cargar las fuentes. Revisa data/fuentes.json.</p>";
+  }
+}
+
+loadSources();
