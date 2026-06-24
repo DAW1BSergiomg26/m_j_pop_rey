@@ -1,0 +1,56 @@
+[
+  {
+    "titulo": "MichaelJackson.com",
+    "tipo": "Web oficial",
+    "url": "https://www.michaeljackson.com/",
+    "estado": "oficial",
+    "fiabilidad": "alta",
+    "valorDocumental": "alto",
+    "usoEnWeb": "Enlazar; no copiar imágenes ni material protegido sin permiso."
+  },
+  {
+    "titulo": "Michael Jackson Official YouTube / VEVO",
+    "tipo": "Canal oficial de vídeo",
+    "url": "https://www.youtube.com/user/michaeljacksonVEVO",
+    "estado": "oficial",
+    "fiabilidad": "alta",
+    "valorDocumental": "alto",
+    "usoEnWeb": "Embeber vídeos oficiales si la plataforma lo permite."
+  },
+  {
+    "titulo": "FBI Vault - Michael Jackson",
+    "tipo": "Documento público",
+    "url": "https://vault.fbi.gov/Michael%20Jackson",
+    "estado": "archivo público",
+    "fiabilidad": "alta",
+    "valorDocumental": "alto",
+    "usoEnWeb": "Citar y contextualizar; evitar morbo o conclusiones no documentadas."
+  },
+  {
+    "titulo": "US5255452A - Anti-gravity illusion",
+    "tipo": "Patente",
+    "url": "https://patents.google.com/patent/US5255452A/en",
+    "estado": "documento público",
+    "fiabilidad": "alta",
+    "valorDocumental": "alto",
+    "usoEnWeb": "Enlazar y explicar con lenguaje propio."
+  },
+  {
+    "titulo": "RIAA Gold & Platinum",
+    "tipo": "Certificaciones",
+    "url": "https://www.riaa.com/gold-platinum/?se=michael+jackson&tab_active=default-award",
+    "estado": "oficial",
+    "fiabilidad": "alta",
+    "valorDocumental": "alto",
+    "usoEnWeb": "Usar como referencia para certificaciones de EE. UU."
+  },
+  {
+    "titulo": "GRAMMY.com - Michael Jackson",
+    "tipo": "Premios",
+    "url": "https://www.grammy.com/artists/michael-jackson/13202/",
+    "estado": "oficial",
+    "fiabilidad": "alta",
+    "valorDocumental": "alto",
+    "usoEnWeb": "Citar premios y nominaciones."
+  }
+]
