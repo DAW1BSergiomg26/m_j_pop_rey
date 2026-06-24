@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Conciertos, giras y presentaciones históricas de Michael Jackson organizadas legalmente." />
-  <title>Conciertos y Giras | Archivo Moonwalk</title>
+  <meta name="description" content="Conciertos premium, giras y presentaciones históricas de Michael Jackson organizadas legalmente." />
+  <title>Conciertos Premium | Archivo Moonwalk</title>
   <link rel="icon" type="image/png" href="img/m_j_pies.png" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/quality-polish.css" />
   <link rel="stylesheet" href="css/moonwalk-scroll-controls.css" />
+  <link rel="stylesheet" href="css/conciertos-premium.css" />
 </head>
 <body>
   <header class="site-header">
@@ -28,9 +29,9 @@
   </header>
 
   <main>
-    <section class="page-hero">
-      <p class="eyebrow">Escenario global</p>
-      <h1>Conciertos y giras históricas</h1>
+    <section class="page-hero conciertos-hero">
+      <p class="eyebrow">Escenario global · giras · acceso legal</p>
+      <h1>Conciertos premium y giras históricas</h1>
       <p>
         De Motown 25 al Super Bowl, de Wembley a Bucarest, de los estadios al ensayo final:
         Michael Jackson convirtió el directo en una ceremonia eléctrica de música, cuerpo, luz y precisión.
@@ -38,7 +39,36 @@
     </section>
 
     <section class="section">
+      <div class="conciertos-intro">
+        <article class="concierto-panel">
+          <p class="eyebrow">Criterio escénico</p>
+          <h2>El concierto como ceremonia pop</h2>
+          <p>
+            Cada ficha separa actuación, gira, contexto, valor histórico, lectura escénica y acceso legal.
+            Esta sala no aloja conciertos completos: organiza referencias, ediciones oficiales y fuentes verificables.
+          </p>
+        </article>
+
+        <article class="concierto-panel">
+          <p class="eyebrow">Mapa rápido</p>
+          <h3>Del moonwalk televisivo al estadio global</h3>
+          <p>
+            La colección conecta televisión, giras mundiales, shows benéficos, premios, estadios,
+            ensayos finales y documentos comerciales protegidos.
+          </p>
+          <div class="concierto-stats" aria-label="Resumen de conciertos premium">
+            <div class="concierto-stat"><strong>10</strong><span>fichas iniciales</span></div>
+            <div class="concierto-stat"><strong>5</strong><span>eras escénicas</span></div>
+            <div class="concierto-stat"><strong>100%</strong><span>criterio legal</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
       <div class="notice">
+        <p class="eyebrow">Nota legal</p>
+        <h2>No se alojan conciertos protegidos</h2>
         <p>
           Esta sección no aloja conciertos completos ni copias no autorizadas. Solo organiza referencias,
           ediciones oficiales, archivos públicos, plataformas legales y fuentes informativas fiables.
@@ -47,7 +77,12 @@
     </section>
 
     <section class="section">
-      <div id="concerts-grid" class="grid two"></div>
+      <div class="section-heading">
+        <p class="eyebrow">Memoria escénica</p>
+        <h2>Actuaciones, giras y documentos en vivo</h2>
+      </div>
+
+      <div id="concerts-grid" class="conciertos-grid-premium"></div>
     </section>
   </main>
 
@@ -56,10 +91,7 @@
   </footer>
 
   <script src="js/app.js"></script>
+  <script src="js/conciertos-premium.js"></script>
   <script src="js/moonwalk-scroll-controls.js"></script>
 </body>
 </html>
-
-
-
-
