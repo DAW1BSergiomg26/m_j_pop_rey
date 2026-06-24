@@ -363,3 +363,56 @@ h2 {
     display: flex;
   }
 }
+
+/* Fase 2 - páginas internas */
+.page-hero {
+  padding: 90px clamp(18px, 5vw, 70px) 45px;
+  background:
+    radial-gradient(circle at top right, rgba(255, 211, 106, 0.16), transparent 34%),
+    linear-gradient(135deg, rgba(255,255,255,0.04), transparent);
+}
+
+.page-hero h1 {
+  max-width: 900px;
+}
+
+.page-hero p:not(.eyebrow) {
+  max-width: 760px;
+  color: var(--muted);
+  font-size: 1.18rem;
+}
+
+.data-card {
+  border: 1px solid var(--card-border);
+  border-radius: 24px;
+  padding: 24px;
+  background:
+    linear-gradient(145deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03)),
+    var(--card);
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.18);
+}
+
+.data-card .tag {
+  display: inline-flex;
+  margin-bottom: 12px;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: rgba(255, 211, 106, 0.14);
+  color: var(--gold);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.data-card h3 {
+  margin-bottom: 8px;
+  color: var(--text);
+}
+
+.data-card p {
+  color: var(--muted);
+}
+
+.data-card a {
+  color: var(--blue);
+  font-weight: 800;
+}

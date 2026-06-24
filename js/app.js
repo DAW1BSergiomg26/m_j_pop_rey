@@ -71,3 +71,29 @@ if (menuButton && nav) {
     menuButton.setAttribute("aria-expanded", String(isOpen));
   });
 }
+
+async function loadAlbums() {
+  const grid = document.querySelector("#albums-grid");
+  if (!grid) return;
+
+  try {
+    const response = await fetch("data/albums.json");
+    const albums = await response.json();
+
+    grid.innerHTML = albums.map((album) => `
+      <article class="data-card">
+        <span class="tag">${album.tipo} · ${album.anio}</span>
+        <h3>${album.titulo}</h3>
+        <p>${album.descripcion}</p>
+        <p><strong>Valor documental:</strong> ${album.valor}</p>
+        <a href="${album.accesoLegal}" target="_blank" rel="noopener noreferrer">
+          Ver acceso legal →
+        </a>
+      </article>
+    `).join("");
+  } catch (error) {
+    grid.innerHTML = "<p>No se pudieron cargar los álbumes. Revisa data/albums.json.</p>";
+  }
+}
+
+loadAlbums();
