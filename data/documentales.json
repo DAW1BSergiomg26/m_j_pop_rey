@@ -1,0 +1,102 @@
+﻿[
+  {
+    "titulo": "The Wiz",
+    "anio": 1978,
+    "tipo": "Película musical",
+    "estado": "Comercial",
+    "enfoque": "Michael Jackson interpreta al Espantapájaros en una relectura afroamericana y urbana de El mago de Oz.",
+    "fiabilidad": "Alta como obra audiovisual; no es documental biográfico.",
+    "accesoLegal": "Comprar, alquilar o consultar en plataformas legales según disponibilidad regional.",
+    "riesgoCopyright": "Alto: película comercial protegida."
+  },
+  {
+    "titulo": "Captain EO",
+    "anio": 1986,
+    "tipo": "Cortometraje musical 3D / atracción Disney",
+    "estado": "Producción comercial de archivo",
+    "enfoque": "Fantasía musical de ciencia ficción vinculada a Disney, Francis Ford Coppola y George Lucas.",
+    "fiabilidad": "Alta como obra audiovisual; disponibilidad legal limitada.",
+    "accesoLegal": "Consultar archivos Disney, referencias oficiales o material autorizado.",
+    "riesgoCopyright": "Muy alto: obra de Disney y titulares asociados."
+  },
+  {
+    "titulo": "Moonwalker",
+    "anio": 1988,
+    "tipo": "Película musical",
+    "estado": "Oficial / comercial",
+    "enfoque": "Película híbrida con música, fantasía, segmentos narrativos y piezas como Smooth Criminal.",
+    "fiabilidad": "Alta como obra oficial del artista.",
+    "accesoLegal": "Comprar o alquilar en edición física o plataformas legales según región.",
+    "riesgoCopyright": "Alto: no alojar copias ni fragmentos sin licencia."
+  },
+  {
+    "titulo": "Michael Jackson's This Is It",
+    "anio": 2009,
+    "tipo": "Documental musical / película de ensayos",
+    "estado": "Oficial / comercial",
+    "enfoque": "Registro de ensayos de la gira no realizada This Is It. Muestra método de trabajo, precisión musical y construcción escénica.",
+    "fiabilidad": "Alta como documento oficial, aunque editado desde una perspectiva autorizada.",
+    "accesoLegal": "Comprar, alquilar o ver en plataformas legales según disponibilidad.",
+    "riesgoCopyright": "Alto: película comercial protegida."
+  },
+  {
+    "titulo": "Bad 25",
+    "anio": 2012,
+    "tipo": "Documental musical",
+    "estado": "Autorizado / dirigido por Spike Lee",
+    "enfoque": "Análisis de la era Bad, su grabación, videos, gira, impacto cultural y contexto creativo.",
+    "fiabilidad": "Alta para estudio musical; perspectiva celebratoria y autorizada.",
+    "accesoLegal": "Consultar plataformas legales, edición física o servicios de streaming según región.",
+    "riesgoCopyright": "Alto: documental protegido."
+  },
+  {
+    "titulo": "Michael Jackson's Journey from Motown to Off the Wall",
+    "anio": 2016,
+    "tipo": "Documental musical",
+    "estado": "Autorizado / dirigido por Spike Lee",
+    "enfoque": "Explora el tránsito de Michael desde Motown hasta la construcción de su identidad adulta con Off the Wall.",
+    "fiabilidad": "Alta para contexto musical y cultural.",
+    "accesoLegal": "Consultar plataformas legales, edición física o servicios autorizados.",
+    "riesgoCopyright": "Alto: documental protegido."
+  },
+  {
+    "titulo": "Leaving Neverland",
+    "anio": 2019,
+    "tipo": "Documental periodístico controversial",
+    "estado": "Controversial / acusatorio",
+    "enfoque": "Presenta acusaciones y testimonios de Wade Robson y James Safechuck. Debe analizarse con lectura crítica, contraste documental y separación entre alegación, sentencia, opinión y hecho probado.",
+    "fiabilidad": "Media para investigación de controversia; no debe tomarse como única fuente.",
+    "accesoLegal": "Consultar plataformas legales donde esté disponible por región.",
+    "riesgoCopyright": "Alto: documental protegido; además exige contextualización ética."
+  },
+  {
+    "titulo": "Square One: Michael Jackson",
+    "anio": 2019,
+    "tipo": "Documental de revisión / defensa",
+    "estado": "No oficial",
+    "enfoque": "Revisa elementos del caso de 1993 desde una postura crítica hacia la narrativa acusatoria.",
+    "fiabilidad": "Media: útil para contraste, pero no debe ser única fuente.",
+    "accesoLegal": "Consultar plataformas legales o canales autorizados por sus productores.",
+    "riesgoCopyright": "Medio-alto: verificar derechos antes de enlazar o embeber."
+  },
+  {
+    "titulo": "Chase the Truth",
+    "anio": 2019,
+    "tipo": "Documental de defensa / opinión",
+    "estado": "No oficial",
+    "enfoque": "Presenta argumentos favorables a Michael Jackson frente a acusaciones públicas.",
+    "fiabilidad": "Media-baja a media: usar como fuente de postura, no como documento definitivo.",
+    "accesoLegal": "Consultar plataformas legales disponibles por región.",
+    "riesgoCopyright": "Medio-alto: revisar disponibilidad legal."
+  },
+  {
+    "titulo": "Michael",
+    "anio": "Pendiente / biopic",
+    "tipo": "Película biográfica",
+    "estado": "Producción comercial",
+    "enfoque": "Biopic centrado en la vida y legado de Michael Jackson. Debe evaluarse cuando esté estrenado y disponible.",
+    "fiabilidad": "Pendiente: obra dramática, no documento histórico puro.",
+    "accesoLegal": "Sitio oficial, cines y futuras plataformas legales.",
+    "riesgoCopyright": "Alto: película comercial protegida."
+  }
+]
