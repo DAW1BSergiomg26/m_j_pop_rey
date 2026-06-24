@@ -336,3 +336,29 @@ function finalMobileMenuFix() {
 }
 
 finalMobileMenuFix();
+
+async function loadCuriosities() {
+  const grid = document.querySelector("#curiosities-grid");
+  if (!grid) return;
+
+  try {
+    const response = await fetch("data/curiosidades.json");
+    const curiosities = await response.json();
+
+    grid.innerHTML = curiosities.map((item) => `
+      <article class="data-card curiosity-card">
+        <span class="tag">${item.tipo} · ${item.anio}</span>
+        <h3>${item.titulo}</h3>
+        <p><strong>Estado:</strong> ${item.estado}</p>
+        <p>${item.descripcion}</p>
+        <p><strong>Valor documental:</strong> ${item.valorDocumental}</p>
+        <p><strong>Acceso legal:</strong> ${item.accesoLegal}</p>
+        <p><strong>Derechos:</strong> ${item.riesgoDerechos}</p>
+      </article>
+    `).join("");
+  } catch (error) {
+    grid.innerHTML = "<p>No se pudieron cargar las curiosidades. Revisa data/curiosidades.json.</p>";
+  }
+}
+
+loadCuriosities();
