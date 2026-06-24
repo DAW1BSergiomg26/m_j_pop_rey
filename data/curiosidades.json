@@ -1,0 +1,102 @@
+﻿[
+  {
+    "titulo": "El moonwalk en Motown 25",
+    "anio": 1983,
+    "tipo": "Momento escénico histórico",
+    "estado": "Confirmado",
+    "descripcion": "La presentación televisiva de Billie Jean en Motown 25 ayudó a convertir el moonwalk en un símbolo mundial de Michael Jackson.",
+    "valorDocumental": "Máximo",
+    "accesoLegal": "Buscar clips autorizados, ediciones oficiales de Motown 25 o archivos televisivos legales.",
+    "riesgoDerechos": "Muy alto: material televisivo protegido."
+  },
+  {
+    "titulo": "Zapatos antigravedad",
+    "anio": 1993,
+    "tipo": "Patente / innovación escénica",
+    "estado": "Documento público verificable",
+    "descripcion": "Michael Jackson y colaboradores registraron un sistema de calzado para crear la famosa inclinación antigravedad vista en Smooth Criminal.",
+    "valorDocumental": "Muy alto",
+    "accesoLegal": "Consultar bases públicas de patentes como Google Patents o USPTO.",
+    "riesgoDerechos": "Bajo para citar la existencia de la patente; alto si se reutilizan imágenes o video del short film."
+  },
+  {
+    "titulo": "Captain EO",
+    "anio": 1986,
+    "tipo": "Cortometraje 3D / experiencia Disney",
+    "estado": "Producción comercial de archivo",
+    "descripcion": "Proyecto de ciencia ficción musical producido para parques Disney, con participación de figuras como Francis Ford Coppola y George Lucas.",
+    "valorDocumental": "Alto",
+    "accesoLegal": "Consultar archivos, referencias o materiales autorizados de Disney.",
+    "riesgoDerechos": "Muy alto: propiedad audiovisual protegida."
+  },
+  {
+    "titulo": "Moonwalker y Smooth Criminal",
+    "anio": 1988,
+    "tipo": "Película musical / pieza de culto",
+    "estado": "Obra oficial comercial",
+    "descripcion": "Moonwalker mezcla videoclip, fantasía, narrativa pop y estética de gánster; su segmento Smooth Criminal se volvió una de las imágenes más reconocibles de su carrera.",
+    "valorDocumental": "Muy alto",
+    "accesoLegal": "Comprar o alquilar Moonwalker mediante edición física o plataformas legales según región.",
+    "riesgoDerechos": "Alto: película y música protegidas."
+  },
+  {
+    "titulo": "Thriller como cine musical",
+    "anio": 1983,
+    "tipo": "Innovación audiovisual",
+    "estado": "Confirmado / análisis cultural",
+    "descripcion": "Thriller cambió la escala del videoclip: duración extendida, narrativa de terror, coreografía colectiva, maquillaje cinematográfico y lanzamiento como evento cultural.",
+    "valorDocumental": "Máximo",
+    "accesoLegal": "Ver el short film en canales oficiales o plataformas legales.",
+    "riesgoDerechos": "Muy alto: no alojar ni reutilizar fragmentos sin licencia."
+  },
+  {
+    "titulo": "Relación con videojuegos",
+    "anio": "1980s-2000s",
+    "tipo": "Cultura digital",
+    "estado": "Documentado",
+    "descripcion": "Michael Jackson tuvo presencia en videojuegos oficiales y también relación cultural con el mundo del entretenimiento interactivo.",
+    "valorDocumental": "Medio-alto",
+    "accesoLegal": "Consultar fichas de videojuegos oficiales, tiendas legales, bases de datos y documentación pública.",
+    "riesgoDerechos": "Medio-alto: imágenes, música y marcas están protegidas."
+  },
+  {
+    "titulo": "El guante blanco",
+    "anio": "1980s",
+    "tipo": "Moda / iconografía pop",
+    "estado": "Confirmado como símbolo cultural",
+    "descripcion": "El guante brillante se convirtió en una pieza visual inseparable de su identidad escénica, asociado al brillo, al gesto coreográfico y a la singularidad del artista.",
+    "valorDocumental": "Alto",
+    "accesoLegal": "Usar fotografías solo con licencia; consultar archivos de prensa, Getty, Alamy o sitios oficiales.",
+    "riesgoDerechos": "Alto si se usan fotografías sin licencia."
+  },
+  {
+    "titulo": "Objetos subastados",
+    "anio": "Varias fechas",
+    "tipo": "Coleccionismo documentado",
+    "estado": "Verificable mediante casas de subastas",
+    "descripcion": "Prendas, premios, objetos personales y piezas de escenario han aparecido en subastas legales, con catálogos que sirven como documentación cultural.",
+    "valorDocumental": "Medio-alto",
+    "accesoLegal": "Consultar catálogos de casas de subastas reconocidas y notas de prensa verificables.",
+    "riesgoDerechos": "Medio: citar datos es posible; usar fotos de catálogo puede requerir permiso."
+  },
+  {
+    "titulo": "Earth Song y el imaginario ecológico",
+    "anio": 1995,
+    "tipo": "Mensaje social / videoclip",
+    "estado": "Confirmado / interpretación cultural",
+    "descripcion": "Earth Song construye una de las imágenes más intensas del Michael humanitario: naturaleza herida, guerra, pérdida y restauración simbólica.",
+    "valorDocumental": "Alto",
+    "accesoLegal": "Ver video oficial y consultar entrevistas o reportajes autorizados.",
+    "riesgoDerechos": "Alto: audiovisual y música protegidos."
+  },
+  {
+    "titulo": "Neverland como símbolo cultural",
+    "anio": "1980s-2000s",
+    "tipo": "Lugar biográfico / símbolo público",
+    "estado": "Documentado con interpretaciones diversas",
+    "descripcion": "Neverland funciona en la memoria pública como mezcla de refugio, fantasía, celebridad, infancia, controversia y mitología pop.",
+    "valorDocumental": "Medio-alto",
+    "accesoLegal": "Usar fuentes periodísticas, biográficas y documentales contrastadas.",
+    "riesgoDerechos": "Medio: evitar fotografías no licenciadas y separar hechos de interpretaciones."
+  }
+]
