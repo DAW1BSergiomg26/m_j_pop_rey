@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Videoclips y short films oficiales de Michael Jackson organizados legalmente." />
-  <title>Videos y Short Films | Archivo Moonwalk</title>
+  <meta name="description" content="Videos premium y short films oficiales de Michael Jackson organizados legalmente en el Archivo Moonwalk." />
+  <title>Videos Premium | Archivo Moonwalk</title>
   <link rel="icon" type="image/png" href="img/m_j_pies.png" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/quality-polish.css" />
   <link rel="stylesheet" href="css/moonwalk-scroll-controls.css" />
+  <link rel="stylesheet" href="css/videos-premium.css" />
 </head>
 <body>
   <header class="site-header">
@@ -28,26 +29,60 @@
   </header>
 
   <main>
-    <section class="page-hero">
-      <p class="eyebrow">Museo audiovisual</p>
-      <h1>Videos y short films oficiales</h1>
+    <section class="page-hero videos-hero">
+      <p class="eyebrow">Museo audiovisual · short films · acceso legal</p>
+      <h1>Videos premium y short films</h1>
       <p>
-        Michael Jackson convirtió el videoclip en cine breve: narrativa, coreografía, moda, efectos visuales,
-        televisión global y una liturgia escénica que aún respira.
+        Michael Jackson convirtió el videoclip en cine breve: narrativa, coreografía, moda,
+        efectos visuales, televisión global y una liturgia escénica que aún respira.
       </p>
     </section>
 
     <section class="section">
+      <div class="video-premium-intro">
+        <article class="video-panel">
+          <p class="eyebrow">Criterio audiovisual</p>
+          <h2>Ver con contexto, no como simple clip</h2>
+          <p>
+            Cada ficha separa video, era, dirección, lenguaje visual, valor cultural y acceso legal.
+            Esta sala no aloja descargas: guía al visitante hacia fuentes oficiales o informativas.
+          </p>
+        </article>
+
+        <article class="video-panel">
+          <p class="eyebrow">Mapa rápido</p>
+          <h3>Del videoclip al cine pop</h3>
+          <p>
+            La colección reúne calle nocturna, terror clásico, gánster noir, Egipto imaginado,
+            protesta social, futurismo espacial y estética gótica.
+          </p>
+          <div class="video-stats" aria-label="Resumen de videos premium">
+            <div class="video-stat"><strong>12</strong><span>fichas iniciales</span></div>
+            <div class="video-stat"><strong>7</strong><span>directores clave</span></div>
+            <div class="video-stat"><strong>100%</strong><span>acceso legal</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
       <div class="notice">
+        <p class="eyebrow">Nota legal</p>
+        <h2>No se alojan videos protegidos</h2>
         <p>
-          Esta sección no aloja videos descargados. Solo enlaza fuentes legales, oficiales o informativas.
-          Los clips, canciones, imágenes y fragmentos audiovisuales pertenecen a sus titulares de derechos.
+          Esta sección solo enlaza fuentes legales, oficiales o informativas. Los clips, canciones,
+          imágenes y fragmentos audiovisuales pertenecen a sus titulares de derechos.
         </p>
       </div>
     </section>
 
     <section class="section">
-      <div id="videos-grid" class="grid two"></div>
+      <div class="section-heading">
+        <p class="eyebrow">Colección audiovisual</p>
+        <h2>Short films y videoclips esenciales</h2>
+      </div>
+
+      <div id="videos-grid" class="video-premium-grid"></div>
     </section>
   </main>
 
@@ -56,10 +91,7 @@
   </footer>
 
   <script src="js/app.js"></script>
+  <script src="js/videos-premium.js"></script>
   <script src="js/moonwalk-scroll-controls.js"></script>
 </body>
 </html>
-
-
-
-
