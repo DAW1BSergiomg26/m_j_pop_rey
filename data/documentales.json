@@ -1,12 +1,16 @@
-﻿[
+[
   {
     "titulo": "The Wiz",
     "anio": 1978,
     "tipo": "Película musical",
     "estado": "Comercial",
+    "nivelLectura": "Obra artística",
+    "simbolo": "★",
     "enfoque": "Michael Jackson interpreta al Espantapájaros en una relectura afroamericana y urbana de El mago de Oz.",
+    "contexto": "Sirve para estudiar una etapa temprana de Michael como actor, cantante y figura de cine musical antes de la consagración total de Thriller.",
     "fiabilidad": "Alta como obra audiovisual; no es documental biográfico.",
     "accesoLegal": "Comprar, alquilar o consultar en plataformas legales según disponibilidad regional.",
+    "accesoLegalUrl": "fuentes.html",
     "riesgoCopyright": "Alto: película comercial protegida."
   },
   {
@@ -14,9 +18,13 @@
     "anio": 1986,
     "tipo": "Cortometraje musical 3D / atracción Disney",
     "estado": "Producción comercial de archivo",
+    "nivelLectura": "Fantasía audiovisual",
+    "simbolo": "✦",
     "enfoque": "Fantasía musical de ciencia ficción vinculada a Disney, Francis Ford Coppola y George Lucas.",
+    "contexto": "Una pieza clave para entender la unión entre música pop, parque temático, cine 3D, espectáculo familiar y tecnología audiovisual de los años ochenta.",
     "fiabilidad": "Alta como obra audiovisual; disponibilidad legal limitada.",
     "accesoLegal": "Consultar archivos Disney, referencias oficiales o material autorizado.",
+    "accesoLegalUrl": "fuentes.html",
     "riesgoCopyright": "Muy alto: obra de Disney y titulares asociados."
   },
   {
@@ -24,9 +32,13 @@
     "anio": 1988,
     "tipo": "Película musical",
     "estado": "Oficial / comercial",
+    "nivelLectura": "Obra oficial",
+    "simbolo": "♛",
     "enfoque": "Película híbrida con música, fantasía, segmentos narrativos y piezas como Smooth Criminal.",
+    "contexto": "Más que una película lineal, funciona como museo audiovisual de la era Bad: mito, infancia, escenario, persecución, baile y fantasía pop.",
     "fiabilidad": "Alta como obra oficial del artista.",
     "accesoLegal": "Comprar o alquilar en edición física o plataformas legales según región.",
+    "accesoLegalUrl": "fuentes.html",
     "riesgoCopyright": "Alto: no alojar copias ni fragmentos sin licencia."
   },
   {
@@ -34,9 +46,13 @@
     "anio": 2009,
     "tipo": "Documental musical / película de ensayos",
     "estado": "Oficial / comercial",
+    "nivelLectura": "Documento de ensayo",
+    "simbolo": "☀",
     "enfoque": "Registro de ensayos de la gira no realizada This Is It. Muestra método de trabajo, precisión musical y construcción escénica.",
+    "contexto": "Debe leerse como archivo de trabajo y película editada: muestra oficio, exigencia, dirección musical y una despedida involuntaria del escenario.",
     "fiabilidad": "Alta como documento oficial, aunque editado desde una perspectiva autorizada.",
     "accesoLegal": "Comprar, alquilar o ver en plataformas legales según disponibilidad.",
+    "accesoLegalUrl": "fuentes.html",
     "riesgoCopyright": "Alto: película comercial protegida."
   },
   {
@@ -44,9 +60,13 @@
     "anio": 2012,
     "tipo": "Documental musical",
     "estado": "Autorizado / dirigido por Spike Lee",
+    "nivelLectura": "Contexto musical",
+    "simbolo": "◆",
     "enfoque": "Análisis de la era Bad, su grabación, videos, gira, impacto cultural y contexto creativo.",
+    "contexto": "Recomendado para estudiar producción, testimonios de colaboradores, herencia musical y la presión artística posterior a Thriller.",
     "fiabilidad": "Alta para estudio musical; perspectiva celebratoria y autorizada.",
     "accesoLegal": "Consultar plataformas legales, edición física o servicios de streaming según región.",
+    "accesoLegalUrl": "fuentes.html",
     "riesgoCopyright": "Alto: documental protegido."
   },
   {
@@ -54,9 +74,13 @@
     "anio": 2016,
     "tipo": "Documental musical",
     "estado": "Autorizado / dirigido por Spike Lee",
+    "nivelLectura": "Origen adulto",
+    "simbolo": "◇",
     "enfoque": "Explora el tránsito de Michael desde Motown hasta la construcción de su identidad adulta con Off the Wall.",
+    "contexto": "Muy útil para comprender la transición desde niño prodigio hacia artista adulto, productor de identidad y figura creativa autónoma.",
     "fiabilidad": "Alta para contexto musical y cultural.",
     "accesoLegal": "Consultar plataformas legales, edición física o servicios autorizados.",
+    "accesoLegalUrl": "fuentes.html",
     "riesgoCopyright": "Alto: documental protegido."
   },
   {
@@ -64,9 +88,13 @@
     "anio": 2019,
     "tipo": "Documental periodístico controversial",
     "estado": "Controversial / acusatorio",
+    "nivelLectura": "Alegaciones y debate público",
+    "simbolo": "!",
     "enfoque": "Presenta acusaciones y testimonios de Wade Robson y James Safechuck. Debe analizarse con lectura crítica, contraste documental y separación entre alegación, sentencia, opinión y hecho probado.",
+    "contexto": "Debe mostrarse con advertencia clara: es una pieza acusatoria y disputada que exige contraste con documentos judiciales, respuestas de la defensa y cobertura periodística seria.",
     "fiabilidad": "Media para investigación de controversia; no debe tomarse como única fuente.",
     "accesoLegal": "Consultar plataformas legales donde esté disponible por región.",
+    "accesoLegalUrl": "fuentes.html",
     "riesgoCopyright": "Alto: documental protegido; además exige contextualización ética."
   },
   {
@@ -74,9 +102,13 @@
     "anio": 2019,
     "tipo": "Documental de revisión / defensa",
     "estado": "No oficial",
+    "nivelLectura": "Contraste y defensa",
+    "simbolo": "◎",
     "enfoque": "Revisa elementos del caso de 1993 desde una postura crítica hacia la narrativa acusatoria.",
+    "contexto": "Puede utilizarse como pieza de contraste, no como cierre definitivo. Su valor está en abrir preguntas y remitir al análisis documental.",
     "fiabilidad": "Media: útil para contraste, pero no debe ser única fuente.",
     "accesoLegal": "Consultar plataformas legales o canales autorizados por sus productores.",
+    "accesoLegalUrl": "fuentes.html",
     "riesgoCopyright": "Medio-alto: verificar derechos antes de enlazar o embeber."
   },
   {
@@ -84,19 +116,41 @@
     "anio": 2019,
     "tipo": "Documental de defensa / opinión",
     "estado": "No oficial",
+    "nivelLectura": "Opinión y defensa pública",
+    "simbolo": "●",
     "enfoque": "Presenta argumentos favorables a Michael Jackson frente a acusaciones públicas.",
+    "contexto": "Debe ubicarse como postura de defensa y opinión, no como investigación neutral cerrada. Útil para entender el debate entre narrativas opuestas.",
     "fiabilidad": "Media-baja a media: usar como fuente de postura, no como documento definitivo.",
     "accesoLegal": "Consultar plataformas legales disponibles por región.",
+    "accesoLegalUrl": "fuentes.html",
     "riesgoCopyright": "Medio-alto: revisar disponibilidad legal."
+  },
+  {
+    "titulo": "The Jacksons: An American Dream",
+    "anio": 1992,
+    "tipo": "Miniserie biográfica",
+    "estado": "Dramatización televisiva",
+    "nivelLectura": "Biografía dramatizada",
+    "simbolo": "■",
+    "enfoque": "Miniserie sobre la historia familiar de The Jacksons, desde los inicios hasta la fama internacional.",
+    "contexto": "Es útil para ubicar imaginario familiar y popular, pero debe tratarse como dramatización basada en hechos, no como documento histórico puro.",
+    "fiabilidad": "Media: valor cultural y biográfico dramatizado.",
+    "accesoLegal": "Buscar ediciones oficiales o plataformas legales con disponibilidad regional.",
+    "accesoLegalUrl": "fuentes.html",
+    "riesgoCopyright": "Alto: producción televisiva protegida."
   },
   {
     "titulo": "Michael",
     "anio": "Pendiente / biopic",
     "tipo": "Película biográfica",
     "estado": "Producción comercial",
+    "nivelLectura": "Pendiente de evaluación",
+    "simbolo": "✧",
     "enfoque": "Biopic centrado en la vida y legado de Michael Jackson. Debe evaluarse cuando esté estrenado y disponible.",
+    "contexto": "Cuando se estrene, conviene distinguir interpretación dramática, fuentes usadas, licencias narrativas y recepción crítica.",
     "fiabilidad": "Pendiente: obra dramática, no documento histórico puro.",
     "accesoLegal": "Sitio oficial, cines y futuras plataformas legales.",
+    "accesoLegalUrl": "fuentes.html",
     "riesgoCopyright": "Alto: película comercial protegida."
   }
 ]
