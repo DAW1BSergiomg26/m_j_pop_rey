@@ -23,28 +23,45 @@ Ordenar información pública y legal sobre:
 - Priorizar análisis propio, enlaces legales y embeds oficiales permitidos.
 - Revisar licencias de imágenes antes de publicarlas.
 
-## Fase 1
+## Versión estable actual
 
-Esta primera versión incluye:
+Esta versión incluye:
 
-- Portada responsive.
-- Diseño visual inspirado en escenario pop.
-- Sección de acceso legal.
-- Mapa inicial del archivo.
-- Curiosidades verificadas.
-- Advertencia legal y ética.
+- Home premium responsive.
+- Biografía documentada con línea de tiempo.
+- Discografía premium con fichas legales.
+- Videos premium y short films con lectura visual.
+- Conciertos premium y memoria escénica.
+- Museo Visual simbólico y legal.
+- Fuentes legales y verificables.
+- Controles Moonwalk flotantes para navegar por secciones.
+- Menú responsive con página activa.
+- Pulido visual global Royal Moonwalk Noir.
 
-## Cómo abrir
+## Cómo abrir en local
 
-Abre `index.html` en el navegador.
+Desde PowerShell, dentro del proyecto:
 
-## Siguiente fase
+```powershell
+npx live-server --port=5500
+```
 
-Crear páginas separadas:
+Después abre:
 
-- `discografia.html`
-- `videos.html`
-- `conciertos.html`
-- `documentales.html`
-- `libros.html`
-- `curiosidades.html`
+```text
+http://localhost:5500/index.html
+```
+
+Alternativa con Python:
+
+```powershell
+python -m http.server 5500
+```
+
+## Flujo Git recomendado
+
+- `main` debe quedar siempre estable.
+- Trabajar cada mejora en una rama `feature/*`.
+- Probar visualmente antes de mezclar.
+- Crear checkpoints con tags después de fases importantes.
+- No subir material protegido ni archivos pesados sin revisar derechos.
