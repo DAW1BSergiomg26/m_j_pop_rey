@@ -388,3 +388,30 @@ async function loadSources() {
 }
 
 loadSources();
+
+async function loadBiographyTimeline() {
+  const timeline = document.querySelector("#bio-timeline");
+  if (!timeline) return;
+
+  try {
+    const response = await fetch("data/biografia.json");
+    const items = await response.json();
+
+    timeline.innerHTML = items.map((item) => `
+      <article class="bio-item">
+        <div class="bio-year">${item.periodo}</div>
+        <div class="bio-content">
+          <span class="tag">${item.tipo}</span>
+          <h3>${item.titulo}</h3>
+          <p>${item.descripcion}</p>
+          <p><strong>Estado:</strong> ${item.estado}</p>
+          <p><strong>Valor documental:</strong> ${item.valor}</p>
+        </div>
+      </article>
+    `).join("");
+  } catch (error) {
+    timeline.innerHTML = "<p>No se pudo cargar la biografía. Revisa data/biografia.json.</p>";
+  }
+}
+
+loadBiographyTimeline();
