@@ -1221,3 +1221,26 @@ main,
   transform: translateY(-3px);
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
+
+.source-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.source-card::before {
+  content: "§";
+  position: absolute;
+  right: 22px;
+  top: 18px;
+  color: rgba(212, 175, 55, 0.24);
+  font-size: 2.6rem;
+  font-weight: 900;
+  text-shadow:
+    0 0 8px rgba(212, 175, 55, 0.20),
+    0 0 16px rgba(109, 7, 21, 0.10);
+}
+
+.source-card:hover {
+  transform: translateY(-3px);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
