@@ -1,0 +1,122 @@
+﻿[
+  {
+    "titulo": "Billie Jean",
+    "anio": 1983,
+    "director": "Steve Barron",
+    "tipo": "Videoclip / short film",
+    "valor": "Muy alto",
+    "concepto": "Una calle nocturna se ilumina con cada paso. El artista aparece como figura misteriosa, perseguida por cámara, rumor y deseo público.",
+    "accesoLegal": "https://www.youtube.com/watch?v=Zi_XLOBDo_Y",
+    "riesgoCopyright": "Alto: enlazar o embeber desde fuente oficial; no descargar ni reutilizar fragmentos sin licencia."
+  },
+  {
+    "titulo": "Beat It",
+    "anio": 1983,
+    "director": "Bob Giraldi",
+    "tipo": "Videoclip / short film",
+    "valor": "Muy alto",
+    "concepto": "Pandillas, tensión callejera, chaqueta roja y coreografía como alternativa simbólica a la violencia.",
+    "accesoLegal": "https://www.youtube.com/watch?v=oRdxUFDoQe0",
+    "riesgoCopyright": "Alto: usar solo enlace oficial o embed permitido."
+  },
+  {
+    "titulo": "Thriller",
+    "anio": 1983,
+    "director": "John Landis",
+    "tipo": "Short film musical",
+    "valor": "Máximo",
+    "concepto": "Terror clásico, zombis, transformación, baile masivo y una nueva forma de entender el videoclip como acontecimiento cultural.",
+    "accesoLegal": "https://www.youtube.com/watch?v=sOnqjkJTMaA",
+    "riesgoCopyright": "Muy alto: obra protegida y patrimonial; enlazar fuente oficial."
+  },
+  {
+    "titulo": "Bad",
+    "anio": 1987,
+    "director": "Martin Scorsese",
+    "tipo": "Short film musical",
+    "valor": "Muy alto",
+    "concepto": "Drama urbano, desafío de identidad, energía callejera, teatralidad y presencia de Wesley Snipes.",
+    "accesoLegal": "https://www.youtube.com/watch?v=dsUXAEzaC3Q",
+    "riesgoCopyright": "Alto: no reutilizar imágenes o fragmentos sin permiso."
+  },
+  {
+    "titulo": "Smooth Criminal",
+    "anio": 1988,
+    "director": "Colin Chilvers",
+    "tipo": "Short film musical",
+    "valor": "Muy alto",
+    "concepto": "Club gánster de los años 30, traje blanco, fedora, tensión cinematográfica e inclinación antigravedad.",
+    "accesoLegal": "https://www.youtube.com/watch?v=h_D3VFfhvs4",
+    "riesgoCopyright": "Alto: enlazar fuente oficial. La coreografía y el video están protegidos."
+  },
+  {
+    "titulo": "Black or White",
+    "anio": 1991,
+    "director": "John Landis",
+    "tipo": "Short film musical",
+    "valor": "Muy alto",
+    "concepto": "Mensaje global, mezcla cultural, morphing digital y una reflexión pop sobre raza, identidad y medios.",
+    "accesoLegal": "https://www.youtube.com/watch?v=F2AitTPI5U0",
+    "riesgoCopyright": "Alto: enlazar o embeber legalmente."
+  },
+  {
+    "titulo": "Remember the Time",
+    "anio": 1992,
+    "director": "John Singleton",
+    "tipo": "Short film musical",
+    "valor": "Alto",
+    "concepto": "Egipto imaginado, magia, realeza, coreografía y estética de gran producción con cameos icónicos.",
+    "accesoLegal": "https://www.youtube.com/watch?v=LeiFF0gvqcc",
+    "riesgoCopyright": "Alto: no copiar escenas ni capturas sin revisar derechos."
+  },
+  {
+    "titulo": "Scream",
+    "anio": 1995,
+    "director": "Mark Romanek",
+    "tipo": "Videoclip / short film",
+    "valor": "Muy alto",
+    "concepto": "Futurismo blanco y negro, rabia mediática, hermandad artística con Janet Jackson y estética espacial.",
+    "accesoLegal": "https://www.youtube.com/watch?v=0P4A1K4lXDo",
+    "riesgoCopyright": "Alto: video protegido; usar enlace oficial."
+  },
+  {
+    "titulo": "Earth Song",
+    "anio": 1995,
+    "director": "Nicholas Brandt",
+    "tipo": "Videoclip / himno ecológico",
+    "valor": "Muy alto",
+    "concepto": "Lamento planetario, destrucción ambiental, dolor humano y una puesta en escena casi bíblica.",
+    "accesoLegal": "https://www.youtube.com/watch?v=XAi3VTSdTxU",
+    "riesgoCopyright": "Alto: no reutilizar audio o video sin licencia."
+  },
+  {
+    "titulo": "They Don't Care About Us",
+    "anio": 1996,
+    "director": "Spike Lee",
+    "tipo": "Videoclip / denuncia social",
+    "valor": "Muy alto",
+    "concepto": "Percusión, protesta, cuerpo colectivo y denuncia contra la violencia institucional. Existen versiones con enfoques visuales distintos.",
+    "accesoLegal": "https://www.youtube.com/watch?v=QNJL6nfu__Q",
+    "riesgoCopyright": "Alto: enlazar versión oficial y contextualizar controversias."
+  },
+  {
+    "titulo": "Ghosts",
+    "anio": 1996,
+    "director": "Stan Winston",
+    "tipo": "Short film musical",
+    "valor": "Alto",
+    "concepto": "Terror gótico, persecución social, humor oscuro, danza, máscaras y una metáfora sobre el artista señalado como monstruo.",
+    "accesoLegal": "https://www.michaeljackson.com/watch/ghosts/",
+    "riesgoCopyright": "Muy alto: obra audiovisual larga; no alojar copias."
+  },
+  {
+    "titulo": "You Rock My World",
+    "anio": 2001,
+    "director": "Paul Hunter",
+    "tipo": "Short film musical",
+    "valor": "Alto",
+    "concepto": "Ambiente de club, persecución romántica, elegancia nocturna y apariciones de Chris Tucker y Marlon Brando.",
+    "accesoLegal": "https://www.youtube.com/watch?v=1-7ABIM2qjU",
+    "riesgoCopyright": "Alto: enlazar fuente oficial."
+  }
+]

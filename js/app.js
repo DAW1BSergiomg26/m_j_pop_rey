@@ -97,3 +97,31 @@ async function loadAlbums() {
 }
 
 loadAlbums();
+
+async function loadVideos() {
+  const grid = document.querySelector("#videos-grid");
+  if (!grid) return;
+
+  try {
+    const response = await fetch("data/videos.json");
+    const videos = await response.json();
+
+    grid.innerHTML = videos.map((video) => `
+      <article class="data-card video-card">
+        <span class="tag">${video.tipo} · ${video.anio}</span>
+        <h3>${video.titulo}</h3>
+        <p><strong>Director:</strong> ${video.director}</p>
+        <p>${video.concepto}</p>
+        <p><strong>Valor documental:</strong> ${video.valor}</p>
+        <p><strong>Derechos:</strong> ${video.riesgoCopyright}</p>
+        <a href="${video.accesoLegal}" target="_blank" rel="noopener noreferrer">
+          Ver acceso legal →
+        </a>
+      </article>
+    `).join("");
+  } catch (error) {
+    grid.innerHTML = "<p>No se pudieron cargar los videos. Revisa data/videos.json.</p>";
+  }
+}
+
+loadVideos();

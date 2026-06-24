@@ -416,3 +416,24 @@ h2 {
   color: var(--blue);
   font-weight: 800;
 }
+
+.video-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.video-card::before {
+  content: "▶";
+  position: absolute;
+  right: 22px;
+  top: 18px;
+  color: rgba(255, 211, 106, 0.28);
+  font-size: 2.4rem;
+  font-weight: 900;
+}
+
+.video-card:hover {
+  transform: translateY(-3px);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+  border-color: rgba(255, 211, 106, 0.42);
+}
