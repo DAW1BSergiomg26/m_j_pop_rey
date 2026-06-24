@@ -281,3 +281,58 @@ function improveMobileMenu() {
 }
 
 improveMobileMenu();
+
+function forceMobileMenuToggle() {
+  const menuButton = document.querySelector(".menu-toggle");
+  const mainNav = document.querySelector(".main-nav");
+
+  if (!menuButton || !mainNav) return;
+
+  menuButton.addEventListener("click", () => {
+    const isOpen = mainNav.classList.toggle("is-open");
+    menuButton.setAttribute("aria-expanded", String(isOpen));
+  });
+
+  mainNav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      mainNav.classList.remove("is-open");
+      menuButton.setAttribute("aria-expanded", "false");
+    });
+  });
+}
+
+forceMobileMenuToggle();
+
+/* =========================================================
+   Mobile Menu Final Fix
+   Elimina listeners duplicados y fuerza un único menú móvil.
+   ========================================================= */
+
+function finalMobileMenuFix() {
+  const oldButton = document.querySelector(".menu-toggle");
+  const mainNav = document.querySelector(".main-nav");
+
+  if (!oldButton || !mainNav) return;
+
+  const newButton = oldButton.cloneNode(true);
+  oldButton.parentNode.replaceChild(newButton, oldButton);
+
+  newButton.addEventListener("click", (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+
+    const isOpen = mainNav.classList.toggle("is-open");
+    newButton.setAttribute("aria-expanded", String(isOpen));
+    document.body.classList.toggle("menu-is-open", isOpen);
+  });
+
+  mainNav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      mainNav.classList.remove("is-open");
+      document.body.classList.remove("menu-is-open");
+      newButton.setAttribute("aria-expanded", "false");
+    });
+  });
+}
+
+finalMobileMenuFix();

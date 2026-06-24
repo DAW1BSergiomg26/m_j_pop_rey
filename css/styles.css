@@ -1016,3 +1016,185 @@ main,
     padding: 20px;
   }
 }
+
+/* =========================================================
+   Golden Sweep V2 - Barrido visible sobre oro metálico
+   ========================================================= */
+
+.hero::before,
+.page-hero::before {
+  height: 4px !important;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(20, 14, 2, 0.95) 0%,
+      rgba(138, 106, 24, 0.85) 18%,
+      #d4af37 34%,
+      #fff1a8 48%,
+      #d4af37 58%,
+      rgba(138, 106, 24, 0.85) 72%,
+      rgba(109, 7, 21, 0.42) 88%,
+      rgba(20, 14, 2, 0.95) 100%
+    ) !important;
+  background-size: 260% 100% !important;
+  animation: goldenSweepStrong 3.4s linear infinite !important;
+  box-shadow:
+    0 0 8px rgba(212, 175, 55, 0.34),
+    0 0 18px rgba(212, 175, 55, 0.22),
+    0 0 34px rgba(255, 241, 168, 0.10),
+    0 0 44px rgba(109, 7, 21, 0.08) !important;
+}
+
+.hero-content::before,
+.page-hero h1::before {
+  height: 3px !important;
+  background:
+    linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(138, 106, 24, 0.70) 18%,
+      #d4af37 34%,
+      #fff1a8 50%,
+      #d4af37 64%,
+      rgba(109, 7, 21, 0.38) 82%,
+      transparent 100%
+    ) !important;
+  background-size: 260% 100% !important;
+  animation: goldenSweepStrong 3.8s linear infinite !important;
+  box-shadow:
+    0 0 10px rgba(212, 175, 55, 0.26),
+    0 0 24px rgba(255, 241, 168, 0.10) !important;
+}
+
+@keyframes goldenSweepStrong {
+  0% {
+    background-position: 260% 50%;
+  }
+
+  100% {
+    background-position: -260% 50%;
+  }
+}
+
+/* =========================================================
+   Mobile Menu Visual Final Fix
+   Asegura que el menú aparezca encima de todo en móvil.
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 9999 !important;
+    overflow: visible !important;
+  }
+
+  .menu-toggle {
+    display: inline-grid !important;
+    place-items: center;
+    cursor: pointer;
+  }
+
+  .main-nav {
+    position: fixed !important;
+    top: 82px !important;
+    left: 18px !important;
+    right: 18px !important;
+    z-index: 9998 !important;
+    display: none !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    padding: 18px !important;
+    border: 1.5px solid rgba(212, 175, 55, 0.68) !important;
+    border-radius: 20px !important;
+    background:
+      radial-gradient(circle at 92% 12%, rgba(212, 175, 55, 0.12), transparent 26%),
+      linear-gradient(145deg, rgba(13, 10, 4, 0.99), rgba(0, 0, 0, 0.99)) !important;
+    box-shadow:
+      0 26px 90px rgba(0, 0, 0, 0.88),
+      0 0 22px rgba(212, 175, 55, 0.18) !important;
+  }
+
+  .main-nav.is-open {
+    display: flex !important;
+  }
+
+  .main-nav a {
+    display: block !important;
+    padding: 13px 15px !important;
+    border: 1px solid rgba(212, 175, 55, 0.22);
+    border-radius: 14px;
+    color: #f7ead0 !important;
+    background: rgba(212, 175, 55, 0.045);
+    font-weight: 700;
+  }
+
+  .main-nav a:hover {
+    color: #d4af37 !important;
+    background: rgba(212, 175, 55, 0.12);
+  }
+}
+
+/* =========================================================
+   Golden Sweep Final
+   Barrido luminoso visible sobre la línea dorada.
+   ========================================================= */
+
+.hero::before,
+.page-hero::before {
+  height: 4px !important;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(30, 20, 2, 0.85) 0%,
+      rgba(90, 64, 8, 0.95) 22%,
+      #d4af37 36%,
+      #fff6bf 42%,
+      #ffffff 46%,
+      #fff6bf 50%,
+      #d4af37 56%,
+      rgba(109, 7, 21, 0.42) 70%,
+      rgba(30, 20, 2, 0.85) 100%
+    ) !important;
+  background-size: 420% 100% !important;
+  animation: royalLightSweep 2.8s linear infinite !important;
+  box-shadow:
+    0 0 8px rgba(212, 175, 55, 0.36),
+    0 0 18px rgba(212, 175, 55, 0.22),
+    0 0 42px rgba(255, 246, 191, 0.12) !important;
+}
+
+.hero-content::before,
+.page-hero h1::before {
+  background:
+    linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(90, 64, 8, 0.85) 28%,
+      #d4af37 40%,
+      #fff6bf 47%,
+      #ffffff 50%,
+      #fff6bf 53%,
+      #d4af37 62%,
+      rgba(109, 7, 21, 0.36) 78%,
+      transparent 100%
+    ) !important;
+  background-size: 420% 100% !important;
+  animation: royalLightSweep 3.2s linear infinite !important;
+}
+
+@keyframes royalLightSweep {
+  0% {
+    background-position: 220% 50%;
+    filter: brightness(0.95);
+  }
+
+  45% {
+    filter: brightness(1.38);
+  }
+
+  100% {
+    background-position: -220% 50%;
+    filter: brightness(1);
+  }
+}
