@@ -1,19 +1,26 @@
-# m_j_pop_rey
+# Archivo Moonwalk
 
 **Archivo Moonwalk** es una web personal de homenaje cultural, legal y documentado a Michael Jackson, el Rey del Pop.
+
+## URL pública
+
+- Web publicada: https://daw1bsergiomg26.github.io/m_j_pop_rey/
+- Portfolio DAW: https://daw1bsergiomg26.github.io/m_j_pop_rey/portfolio.html
+- Release estable: https://github.com/DAW1BSergiomg26/m_j_pop_rey/releases/tag/v1.0.0
 
 ## Objetivo
 
 Ordenar información pública y legal sobre:
 
-- Discografía
-- Videoclips y short films
-- Conciertos
-- Documentales
-- Libros
-- Documentos públicos
-- Rarezas verificadas
-- Legado cultural
+- Biografía.
+- Discografía.
+- Videoclips y short films.
+- Conciertos.
+- Documentales.
+- Fuentes oficiales y verificables.
+- Rarezas culturales verificadas.
+- Museo visual simbólico.
+- Legado cultural.
 
 ## Reglas del proyecto
 
@@ -25,7 +32,7 @@ Ordenar información pública y legal sobre:
 
 ## Versión estable actual
 
-Esta versión incluye:
+**v1.0.0 - Premium Final** incluye:
 
 - Home premium responsive.
 - Biografía premium final con línea de tiempo humana, artística y cultural.
@@ -36,9 +43,21 @@ Esta versión incluye:
 - Curiosidades premium y rarezas verificadas.
 - Museo Visual simbólico y legal.
 - Fuentes premium legales y verificables.
+- Landing Portfolio DAW.
+- SEO base: `sitemap.xml`, `robots.txt` y `site.webmanifest`.
 - Controles Moonwalk flotantes para navegar por secciones.
 - Menú responsive con página activa.
 - Pulido visual global Royal Moonwalk Noir.
+
+## Tecnologías
+
+- HTML5.
+- CSS3.
+- JavaScript.
+- JSON.
+- Git y GitHub.
+- GitHub Pages.
+- SEO básico.
 
 ## Cómo abrir en local
 
@@ -67,3 +86,7 @@ python -m http.server 5500
 - Probar visualmente antes de mezclar.
 - Crear checkpoints con tags después de fases importantes.
 - No subir material protegido ni archivos pesados sin revisar derechos.
+
+## Estado
+
+Proyecto publicado, versionado y preparado como portfolio DAW.
