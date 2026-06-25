@@ -32,8 +32,10 @@ Esta versión incluye:
 - Discografía premium con fichas legales.
 - Videos premium y short films con lectura visual.
 - Conciertos premium y memoria escénica.
+- Documentales premium con lectura crítica.
+- Curiosidades premium y rarezas verificadas.
 - Museo Visual simbólico y legal.
-- Fuentes legales y verificables.
+- Fuentes premium legales y verificables.
 - Controles Moonwalk flotantes para navegar por secciones.
 - Menú responsive con página activa.
 - Pulido visual global Royal Moonwalk Noir.
