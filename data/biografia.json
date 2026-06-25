@@ -1,98 +1,134 @@
-﻿[
+[
   {
     "periodo": "1958",
     "titulo": "Nacimiento en Gary, Indiana",
     "tipo": "Origen biográfico",
+    "simbolo": "✦",
     "descripcion": "Michael Joseph Jackson nació el 29 de agosto de 1958 en Gary, Indiana, dentro de una familia que pronto quedaría marcada por la música, la disciplina escénica y el trabajo colectivo.",
+    "lecturaHumana": "El punto de partida no es el mito, sino un niño dentro de una familia trabajadora, en una ciudad industrial, antes de convertirse en archivo vivo de la cultura pop.",
     "valor": "Alto",
-    "estado": "Confirmado"
+    "estado": "Confirmado",
+    "fuenteRecomendada": "Biografías, registros públicos y fuentes oficiales."
   },
   {
     "periodo": "1964-1975",
     "titulo": "The Jackson 5",
     "tipo": "Infancia artística / grupo familiar",
+    "simbolo": "♫",
     "descripcion": "Michael se convirtió en la voz principal de The Jackson 5, grupo que alcanzó éxito masivo con Motown y mostró desde temprano su carisma vocal, sentido rítmico y presencia escénica.",
+    "lecturaHumana": "La infancia artística fue brillo y exigencia al mismo tiempo: talento temprano, aprendizaje duro, televisión, escenario y una voz infantil con madurez emocional sorprendente.",
     "valor": "Muy alto",
-    "estado": "Confirmado"
+    "estado": "Confirmado",
+    "fuenteRecomendada": "Fuentes Motown, discografía oficial, archivos musicales y entrevistas verificadas."
   },
   {
     "periodo": "1979",
     "titulo": "Off the Wall",
     "tipo": "Consagración solista adulta",
+    "simbolo": "◆",
     "descripcion": "Con producción de Quincy Jones, Off the Wall consolidó al Michael adulto: soul, disco, funk y pop sofisticado. Fue el primer gran salto hacia una identidad solista propia.",
+    "lecturaHumana": "Aquí deja de ser solo el niño prodigio y empieza a diseñar una identidad adulta: elegante, bailable, nocturna, ambiciosa y técnicamente precisa.",
     "valor": "Muy alto",
-    "estado": "Confirmado"
+    "estado": "Confirmado",
+    "fuenteRecomendada": "Discografía oficial, créditos del álbum y documentales autorizados."
   },
   {
     "periodo": "1982-1984",
     "titulo": "Thriller y la conquista global",
     "tipo": "Revolución musical y audiovisual",
+    "simbolo": "♛",
     "descripcion": "Thriller transformó la industria del pop: álbum, videoclip, danza, televisión, moda y marketing funcionaron como una maquinaria cultural sin precedentes.",
+    "lecturaHumana": "Thriller no fue solo éxito comercial: fue una arquitectura cultural. Música, imagen, terror, coreografía y televisión trabajaron como una sola máquina de memoria.",
     "valor": "Máximo",
-    "estado": "Confirmado"
+    "estado": "Confirmado",
+    "fuenteRecomendada": "Fuentes oficiales, RIAA, Grammy, Billboard y bases musicales."
   },
   {
     "periodo": "1983",
     "titulo": "Motown 25 y el moonwalk",
     "tipo": "Momento escénico histórico",
+    "simbolo": "☾",
     "descripcion": "La interpretación televisiva de Billie Jean en Motown 25 ayudó a convertir el moonwalk en una firma corporal reconocible en todo el mundo.",
+    "lecturaHumana": "Una pausa, un sombrero, un guante, un paso hacia atrás y una multitud mirando hacia delante: el cuerpo de Michael escribió una frase que el pop todavía repite.",
     "valor": "Máximo",
-    "estado": "Confirmado"
+    "estado": "Confirmado",
+    "fuenteRecomendada": "Ediciones autorizadas de Motown 25 y archivos televisivos legales."
   },
   {
     "periodo": "1987-1989",
     "titulo": "Bad y la era del control artístico",
     "tipo": "Álbum / gira / estética",
+    "simbolo": "★",
     "descripcion": "Bad presentó una imagen más afilada, urbana y desafiante. La gira mundial demostró su capacidad para dominar estadios con precisión coreográfica, teatralidad y escala internacional.",
+    "lecturaHumana": "La era Bad suena a independencia, presión y desafío: Michael intenta demostrar que no era un accidente de Thriller, sino un arquitecto completo del espectáculo moderno.",
     "valor": "Muy alto",
-    "estado": "Confirmado"
+    "estado": "Confirmado",
+    "fuenteRecomendada": "Ediciones oficiales, Bad 25, conciertos legales y archivos de gira."
   },
   {
     "periodo": "1991-1993",
     "titulo": "Dangerous y el sonido de una nueva década",
     "tipo": "Evolución sonora",
+    "simbolo": "⬢",
     "descripcion": "Dangerous incorporó new jack swing, R&B moderno, pop industrial y una estética más intensa. La etapa amplió su lenguaje visual y su mensaje social.",
+    "lecturaHumana": "Dangerous mezcla fuerza física, ansiedad mediática, baile agresivo y mensaje social. Es una etapa de mutación: el artista cambia con la década y la década cambia con él.",
     "valor": "Muy alto",
-    "estado": "Confirmado"
+    "estado": "Confirmado",
+    "fuenteRecomendada": "Álbum oficial, short films, fuentes discográficas y entrevistas autorizadas."
   },
   {
     "periodo": "1993",
     "titulo": "Super Bowl XXVII",
     "tipo": "Presentación televisiva histórica",
+    "simbolo": "◎",
     "descripcion": "Su show de medio tiempo ayudó a redefinir el espectáculo del Super Bowl como escenario global para superestrellas musicales.",
+    "lecturaHumana": "El silencio inicial y la aparición casi ceremonial muestran una idea poderosa: Michael podía convertir un evento deportivo en liturgia pop mundial.",
     "valor": "Máximo",
-    "estado": "Confirmado"
+    "estado": "Confirmado",
+    "fuenteRecomendada": "Archivos oficiales de NFL, televisión y fuentes periodísticas verificadas."
   },
   {
     "periodo": "1995-1997",
     "titulo": "HIStory",
     "tipo": "Retrospectiva y manifiesto artístico",
+    "simbolo": "■",
     "descripcion": "HIStory combinó grandes éxitos con nuevas canciones cargadas de tensión mediática, defensa personal, crítica social y construcción de memoria pública.",
+    "lecturaHumana": "HIStory es archivo y herida: una obra donde el artista mira hacia atrás, se defiende, protesta y convierte la memoria pública en escenario.",
     "valor": "Alto",
-    "estado": "Confirmado"
+    "estado": "Confirmado / interpretación cultural",
+    "fuenteRecomendada": "Álbum oficial, letras, entrevistas, documentales y fuentes periodísticas contrastadas."
   },
   {
     "periodo": "2001",
     "titulo": "Invincible",
     "tipo": "Último álbum de estudio publicado en vida",
+    "simbolo": "◇",
     "descripcion": "Invincible presentó una producción contemporánea con R&B, pop y baladas de gran escala. Es una etapa discutida, pero clave para entender su relación final con la industria discográfica.",
+    "lecturaHumana": "Invincible habla de resistencia, aislamiento industrial y búsqueda de permanencia. No tiene la unanimidad de las eras anteriores, pero sí una importancia humana y documental fuerte.",
     "valor": "Alto",
-    "estado": "Confirmado"
+    "estado": "Confirmado",
+    "fuenteRecomendada": "Créditos oficiales, reseñas musicales y bases discográficas."
   },
   {
     "periodo": "2009",
     "titulo": "This Is It y fallecimiento",
     "tipo": "Última etapa pública",
+    "simbolo": "✧",
     "descripcion": "Mientras preparaba la serie de conciertos This Is It, Michael Jackson falleció el 25 de junio de 2009. Los ensayos publicados después permiten ver su método de trabajo, exigencia musical y dirección escénica.",
+    "lecturaHumana": "This Is It duele porque muestra un artista trabajando, corrigiendo, escuchando y diseñando detalle por detalle. Es despedida, pero también clase magistral de oficio.",
     "valor": "Muy alto",
-    "estado": "Confirmado"
+    "estado": "Confirmado",
+    "fuenteRecomendada": "Película oficial, fuentes legales y registros periodísticos fiables."
   },
   {
     "periodo": "Legado",
     "titulo": "Memoria global del Rey del Pop",
     "tipo": "Influencia cultural",
+    "simbolo": "✦",
     "descripcion": "Su influencia continúa en la danza, el videoclip, la moda, el pop global, el espectáculo de estadio, la cultura fan, los archivos digitales y la idea moderna de celebridad musical.",
+    "lecturaHumana": "El legado no es una estatua inmóvil: vive cada vez que alguien aprende un paso, estudia un videoclip, discute una fuente o entiende que el pop también puede ser archivo cultural.",
     "valor": "Máximo",
-    "estado": "Análisis cultural basado en hechos documentados"
+    "estado": "Análisis cultural basado en hechos documentados",
+    "fuenteRecomendada": "Fuentes oficiales, bibliografía, hemerotecas y análisis cultural contrastado."
   }
 ]
