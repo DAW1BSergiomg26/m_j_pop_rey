@@ -3,6 +3,16 @@
    Navegación responsive, enlace activo y pequeños detalles comunes.
    ========================================================= */
 
+function ensurePortfolioNavigationLink() {
+  const mainNav = document.querySelector(".main-nav");
+  if (!mainNav || mainNav.querySelector('a[href="portfolio.html"]')) return;
+
+  const portfolioLink = document.createElement("a");
+  portfolioLink.href = "portfolio.html";
+  portfolioLink.textContent = "Portfolio";
+  mainNav.appendChild(portfolioLink);
+}
+
 function initMainNavigation() {
   const menuButton = document.querySelector(".menu-toggle");
   const mainNav = document.querySelector(".main-nav");
@@ -58,6 +68,7 @@ function initExternalLinks() {
   });
 }
 
+ensurePortfolioNavigationLink();
 initMainNavigation();
 markActiveNavigation();
 initExternalLinks();
