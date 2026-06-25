@@ -28,7 +28,7 @@ Ordenar información pública y legal sobre:
 Esta versión incluye:
 
 - Home premium responsive.
-- Biografía documentada con línea de tiempo.
+- Biografía premium final con línea de tiempo humana, artística y cultural.
 - Discografía premium con fichas legales.
 - Videos premium y short films con lectura visual.
 - Conciertos premium y memoria escénica.
